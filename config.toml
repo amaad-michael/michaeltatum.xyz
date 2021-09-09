@@ -1,4 +1,4 @@
-baseURL = "https://commonslaughter.github.io"
+baseURL = "commonslaughter.github.io"
 theme = "risotto"
 title = "Michael Tatum"
 author = "Michael Tatum"
