@@ -2,7 +2,7 @@ baseURL = "/"
 theme = "risotto"
 title = "Michael Tatum"
 author = "Michael Tatum"
-copyright = "© 2023 AMT"
+copyright = "© 2025 AMT"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -36,7 +36,7 @@ logo = "images/work.png"
 [[params.socialLinks]]
 icon = "fab fa-github"
 title = "GitHub"
-url = "https://github.com/commonslaughter"
+url = "https://github.com/amaad-michael/"
 
 [[params.socialLinks]]
 icon = "fas fa-envelope"
@@ -52,11 +52,6 @@ url = "https://www.linkedin.com/in/amaadmichael/"
 icon = "far fa-file"
 title = "VisualCV"
 url = "https://www.visualcv.com/amtamt/"
-
-[[params.socialLinks]]
-icon = "fab fa-patreon"
-title = "Patreon"
-url = "https://patreon.com/linuxathome/"
 
 [[params.socialLinks]]
 icon = "far fa-newspaper"
