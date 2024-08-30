@@ -8,12 +8,21 @@
     <language>en</language>
     <copyright>© 2025 AMT</copyright><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>Greetings!</title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I am a Linux and cybersecurity engineer based in the Austin metro area. I run servers with RHEL-based distributions. I audit security with Kali and BlackArch. I focus on cloud infrastructure, systems automation, and server hardening. I use Debian and its derivatives in various tool use-cases. I write technical papers and documentation. I administer systems at scale with Ansible and SaltStack. Consider joining me on my free newsletter.</description>
+      <description>I am a Linux and cybersecurity engineer based in the Austin metro area. I run servers with RHEL-based distributions. I audit security with Kali and BlackArch. I focus on cloud infrastructure, systems automation, and server hardening. I use Debian and its derivatives in various tool use-cases. I write technical papers and documentation. I administer systems at scale with Ansible and SaltStack. I assemble powerful and efficient hardware builds. Consider joining me on my free newsletter!</description>
     </item>
     
   </channel>
