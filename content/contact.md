@@ -1,6 +1,6 @@
 ---
-title: "Contact"
-draft: true
+title: "Drop me a line!"
+draft: false
 ---
 
 Feel free to reach out to me through any of the following methods:
@@ -14,6 +14,9 @@ You can email me at [amaad.michael@gmail.com](mailto:amaad.michael@gmail.com).
 - **VisualCV**: [A. Michael Tatum](https://my.visualcv.com/michaeltatum/)
 - **LinkedIn**: [A. Michael Tatum](https://www.linkedin.com/in/amaadmichael/)
 - **GitHub**: [amaad-michael](https://github.com/amaad-michael/)
+
+## Newsletter
+- **SubStack**: [PAYLOAD;; Michael Tatum’s Linux Newsletter](https://amaadmichael.substack.com/welcome/)
 
 ![Laptop Icon](/images/nail-gilfanov-TuyneoFacJg-unsplash.jpg#center)
 
