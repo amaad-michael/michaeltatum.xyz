@@ -13,7 +13,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/contact/</guid>
-      <description> </description>
+      <description>Feel free to reach out to me through any of the following methods:
+Email You can email me at amaad.michael@gmail.com.
+Social Media VisualCV: A. Michael Tatum LinkedIn: A. Michael Tatum GitHub: amaad-michael Location I am based in the Austin, TX metro area.</description>
     </item>
     
     <item>
@@ -22,7 +24,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I am a Linux and cybersecurity engineer based in the Austin metro area. I run servers with RHEL-based distributions. I audit security with Kali and BlackArch. I focus on cloud infrastructure, systems automation, and server hardening. I use Debian and its derivatives in various tool use-cases. I write technical papers and documentation. I administer systems at scale with Ansible and SaltStack. I assemble powerful and efficient hardware builds. Consider joining me on my free newsletter!</description>
+      <description>I am a Linux and cybersecurity engineer based in the Austin metro area. I run servers with RHEL-based distributions. I audit security with Kali and BlackArch. I focus on cloud infrastructure, systems automation, and server hardening. I use Debian and its derivatives in various tool use-cases. I write technical papers and documentation. I administer systems at scale with Ansible and SaltStack. I assemble powerful and efficient hardware builds. Consider joining me on my free newsletter.</description>
     </item>
     
   </channel>

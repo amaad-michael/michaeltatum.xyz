@@ -12,6 +12,6 @@ draft: false
 * I administer systems at scale with Ansible and SaltStack.
 * I assemble powerful and efficient **[hardware builds](https://www.facebook.com/marketplace/profile/100009407774967/)**.
 
-Consider joining me on my **[free newsletter](https://amaadmichael.substack.com/welcome/)**!
+Consider joining me on my **[free newsletter](https://amaadmichael.substack.com/welcome/)**.
 
 ![Kali + Bare Metal](/images/kali-server-rack-20180125-02.jpeg#center)
