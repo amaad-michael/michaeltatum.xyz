@@ -17,6 +17,7 @@ ignoreErrors = ["error-remote-getjson"]
 sectionPagesMenu = "main"
 
 [params]
+favicon = "/images/bash.png"
 
 [params.theme]
 palette = "gruvbox-dark"
@@ -26,7 +27,7 @@ mode = "dark-mode"
 [params.about]
 title = "A. Michael Tatum"
 description = "Welcome! This is my digital CV."
-logo = "images/work.png"
+logo = "/images/profile-cleaned.jpg"
 
 # Sidebar: social links
 # Available icon sets:
