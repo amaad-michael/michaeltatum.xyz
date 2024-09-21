@@ -16,7 +16,7 @@ You can email me at [amaad.michael@gmail.com](mailto:amaad.michael@gmail.com).
 - **GitHub**: [amaad-michael](https://github.com/amaad-michael/)
 
 ## Newsletter
-- **SubStack**: [PAYLOAD;; Michael Tatum’s Linux Newsletter](https://amaadmichael.substack.com/welcome/)
+**SubStack**: [PAYLOAD;; Michael Tatum’s Linux Newsletter](https://amaadmichael.substack.com/welcome/)
 
 ![Laptop Icon](/images/nail-gilfanov-TuyneoFacJg-unsplash.jpg#center)
 

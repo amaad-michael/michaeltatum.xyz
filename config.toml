@@ -68,6 +68,12 @@ url = "https://amaadmichael.substack.com/welcome/"
     weight = 10
 
   [[menu.main]]
+    identifier = "certs"
+    name = "Certs"
+    url = "/certs/"
+    weight = 10
+
+  [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
