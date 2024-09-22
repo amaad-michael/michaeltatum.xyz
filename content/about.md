@@ -14,6 +14,6 @@ draft: false
 
 Consider joining me on my **[free newsletter](https://amaadmichael.substack.com/welcome/)**.
 
-![Kali + Bare Metal](/images/kali-server-rack-20180125-02.jpeg#center)
+<img src="/images/kali-server-rack-20180125-02.jpeg" alt="Kali + Bare Metal" width="400" height="400">
 
 ---

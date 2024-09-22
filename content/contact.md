@@ -8,7 +8,7 @@ Feel free to reach out to me through any of the following methods:
 ## Email
 You can email me at [amaad.michael@gmail.com](mailto:amaad.michael@gmail.com).
 
-![Email Icon](/images/stephen-harlan-NYTa57zrmQ0-unsplash.jpg#center)
+<img src="/images/stephen-harlan-NYTa57zrmQ0-unsplash.jpg" alt="Example image" width="400" height="400">
 
 ## Social Media
 - **VisualCV**: [A. Michael Tatum](https://my.visualcv.com/michaeltatum/)
@@ -18,11 +18,11 @@ You can email me at [amaad.michael@gmail.com](mailto:amaad.michael@gmail.com).
 ## Newsletter
 **SubStack**: [PAYLOAD;; Michael Tatum’s Linux Newsletter](https://amaadmichael.substack.com/welcome/)
 
-![Laptop Icon](/images/nail-gilfanov-TuyneoFacJg-unsplash.jpg#center)
+<img src="/images/nail-gilfanov-TuyneoFacJg-unsplash.jpg" alt="Example image" width="400" height="400">
 
 ## Location
 I am based in the Austin, TX metro area.
 
-![Location Icon](/images/daniel-l-wIKlZf8Jg4c-unsplash.jpg#center)
+<img src="/images/daniel-l-wIKlZf8Jg4c-unsplash.jpg" alt="Example image" width="400" height="400">
 
 ---
