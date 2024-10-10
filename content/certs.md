@@ -1,6 +1,6 @@
 ---
 title: "Certifications"
-draft: true
+draft: false
 ---
 
 ## AZ-900: Azure Fundamentals
