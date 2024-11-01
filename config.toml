@@ -50,11 +50,6 @@ title = "LinkedIn"
 url = "https://www.linkedin.com/in/amaadmichael/"
 
 [[params.socialLinks]]
-icon = "far fa-file"
-title = "VisualCV"
-url = "https://my.visualcv.com/michaeltatum/"
-
-[[params.socialLinks]]
 icon = "far fa-newspaper"
 title = "Join my newsletter"
 url = "https://amaadmichael.substack.com/welcome/"
