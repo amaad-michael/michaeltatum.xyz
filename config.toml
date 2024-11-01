@@ -1,4 +1,4 @@
-baseURL = "michaeltatum.xyz"
+baseURL = "https://michaeltatum.xyz"
 theme = ["hugo-embed-pdf-shortcode", "risotto"]
 title = "Michael Tatum"
 author = "Michael Tatum"
@@ -17,7 +17,7 @@ ignoreErrors = ["error-remote-getjson"]
 sectionPagesMenu = "main"
 
 [params]
-favicon = "/static/images/bash.png"
+favicon = "./static/images/bash.png"
 
 [params.theme]
 palette = "gruvbox-dark"

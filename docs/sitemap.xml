@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>michaeltatum.xyz/</loc>
+    <loc>https://michaeltatum.xyz/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>michaeltatum.xyz/categories/</loc>
+    <loc>https://michaeltatum.xyz/categories/</loc>
   </url><url>
-    <loc>michaeltatum.xyz/certs/</loc>
+    <loc>https://michaeltatum.xyz/certs/</loc>
   </url><url>
-    <loc>michaeltatum.xyz/contact/</loc>
+    <loc>https://michaeltatum.xyz/contact/</loc>
   </url><url>
-    <loc>michaeltatum.xyz/about/</loc>
+    <loc>https://michaeltatum.xyz/about/</loc>
   </url><url>
-    <loc>michaeltatum.xyz/resume/</loc>
+    <loc>https://michaeltatum.xyz/resume/</loc>
   </url><url>
-    <loc>michaeltatum.xyz/series/</loc>
+    <loc>https://michaeltatum.xyz/series/</loc>
   </url><url>
-    <loc>michaeltatum.xyz/tags/</loc>
+    <loc>https://michaeltatum.xyz/tags/</loc>
   </url>
 </urlset>

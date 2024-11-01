@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Michael Tatum</title>
-    <link>michaeltatum.xyz/tags/</link>
+    <link>https://michaeltatum.xyz/tags/</link>
     <description>Recent content in Tags on Michael Tatum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 AMT</copyright><atom:link href="michaeltatum.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 AMT</copyright><atom:link href="https://michaeltatum.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
