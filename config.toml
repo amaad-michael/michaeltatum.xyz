@@ -1,5 +1,5 @@
 baseURL = "/"
-theme = "risotto"
+theme = ["hugo-embed-pdf-shortcode", "risotto"]
 title = "Michael Tatum"
 author = "Michael Tatum"
 copyright = "© 2025 AMT"
@@ -8,6 +8,8 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 publishDir = "docs"
+favicon = "/images/bash.png"
+
 
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
@@ -17,7 +19,6 @@ ignoreErrors = ["error-remote-getjson"]
 sectionPagesMenu = "main"
 
 [params]
-favicon = "/images/bash.png"
 
 [params.theme]
 palette = "gruvbox-dark"
@@ -73,6 +74,14 @@ url = "https://amaadmichael.substack.com/welcome/"
     name = "Contact"
     url = "/contact/"
     weight = 10
+
+[[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume/"
+    weight = 10
+
+
 
 [taxonomies]
 category = "categories"
