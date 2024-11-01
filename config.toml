@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "michaeltatum.xyz"
 theme = ["hugo-embed-pdf-shortcode", "risotto"]
 title = "Michael Tatum"
 author = "Michael Tatum"

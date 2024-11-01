@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Michael Tatum</title>
-    <link>/</link>
+    <link>michaeltatum.xyz/</link>
     <description>Recent content on Michael Tatum</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>© 2025 AMT</copyright><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© 2025 AMT</copyright><atom:link href="michaeltatum.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Certifications</title>
-      <link>/certs/</link>
+      <link>michaeltatum.xyz/certs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/certs/</guid>
+      <guid>michaeltatum.xyz/certs/</guid>
       <description>AZ-900: Azure Fundamentals Issuing Organization: Microsoft Date of Completion: September 2024 Linux/UNIX Server Administrator Certificate Issuing Organization: Gwinnett Technical College Date of Completion: May 2012 PC Repair and Network Technician Certificate Issuing Organization: Gwinnett Technical College Date of Completion: May 2011 </description>
     </item>
     
     <item>
       <title>Drop me a line!</title>
-      <link>/contact/</link>
+      <link>michaeltatum.xyz/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/contact/</guid>
+      <guid>michaeltatum.xyz/contact/</guid>
       <description>Feel free to reach out to me through any of the following methods:
 Email You can email me at amaad.michael@gmail.com.
 Social Media LinkedIn: A. Michael Tatum GitHub: amaad-michael Newsletter SubStack: PAYLOAD;; Michael Tatum’s Linux Newsletter
@@ -30,19 +30,19 @@ Location I am based in the Austin, TX metro area.</description>
     
     <item>
       <title>Greetings!</title>
-      <link>/about/</link>
+      <link>michaeltatum.xyz/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>michaeltatum.xyz/about/</guid>
       <description>I am a Linux and cybersecurity engineer based in the Austin metro area. I manage servers from both the Debian and RHEL families of distributions. I audit security with Kali and BlackArch. I focus on cloud platforms, automation, and infrastructure-as-code. I write technical papers and documentation. I administer varied systems at scale with Ansible and SaltStack. I assemble powerful and efficient hardware builds. Consider joining me on my free newsletter.</description>
     </item>
     
     <item>
       <title>Resume / CV</title>
-      <link>/resume/</link>
+      <link>michaeltatum.xyz/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/resume/</guid>
+      <guid>michaeltatum.xyz/resume/</guid>
       <description> Previous Next &amp;nbsp; &amp;nbsp; / [pdf] View the PDF file here. </description>
     </item>
     
