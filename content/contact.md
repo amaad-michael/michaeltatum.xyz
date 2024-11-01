@@ -11,7 +11,6 @@ You can email me at [amaad.michael@gmail.com](mailto:amaad.michael@gmail.com).
 <img src="/images/stephen-harlan-NYTa57zrmQ0-unsplash.jpg" alt="Example image" width="400" height="400">
 
 ## Social Media
-- **VisualCV**: [A. Michael Tatum](https://my.visualcv.com/michaeltatum/)
 - **LinkedIn**: [A. Michael Tatum](https://www.linkedin.com/in/amaadmichael/)
 - **GitHub**: [amaad-michael](https://github.com/amaad-michael/)
 
