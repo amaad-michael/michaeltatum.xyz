@@ -3,7 +3,7 @@ title: "Greetings!"
 draft: false
 ---
 
-* I am a Linux and cybersecurity engineer based in the Austin metro area.
+* I am a cloud Linux engineer based in the Austin metro area.
 * I manage servers from both the Debian and RHEL families of distributions.
 * I audit security with Kali and BlackArch.
 * I focus on cloud platforms, automation, and infrastructure-as-code.
