@@ -62,6 +62,12 @@ url = "https://amaadmichael.substack.com/welcome/"
     url = "/about/"
     weight = 10
 
+ [[menu.main]]
+    identifier = "afk"
+    name = "AFK"
+    url = "/afk/"
+    weight = 10
+
   [[menu.main]]
     identifier = "certs"
     name = "Certs"
