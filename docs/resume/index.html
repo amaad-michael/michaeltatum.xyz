@@ -18,9 +18,6 @@
 <link rel="stylesheet" href="https://michaeltatum.xyz/css/palettes/gruvbox-dark.css">
 <link rel="stylesheet" href="https://michaeltatum.xyz/css/risotto.css">
 <link rel="stylesheet" href="https://michaeltatum.xyz/css/custom.css">
-
-
-<link rel="icon" href="/images/bash.png">
 </head>
 
     <body>
@@ -133,36 +130,36 @@
   @-webkit-keyframes spin {
     to { -webkit-transform: rotate(360deg); }
   }
-  </style><div class="embed-pdf-container" id="embed-pdf-container-da2c9fde">
-    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-da2c9fde">
-        <div class="pdf-loading" id="pdf-loading-da2c9fde"></div>
+  </style><div class="embed-pdf-container" id="embed-pdf-container-de12fd17">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-de12fd17">
+        <div class="pdf-loading" id="pdf-loading-de12fd17"></div>
     </div>
     <div id="overlayText">
-      <a href="/static/images/Michael_Tatum_VisualCV_Resume2025v2.pdf" aria-label="Download" download>
+      <a href="/static/images/Michael_Tatum_VisualCV_Resume2025v4-2.pdf" aria-label="Download" download>
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
             <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
         </svg>
       </a>
     </div>
-    <canvas class="pdf-canvas" id="pdf-canvas-da2c9fde"></canvas>
+    <canvas class="pdf-canvas" id="pdf-canvas-de12fd17"></canvas>
 </div>
 
-<div class="pdf-paginator" id="pdf-paginator-da2c9fde">
-    <button id="pdf-prev-da2c9fde">Previous</button>
-    <button id="pdf-next-da2c9fde">Next</button> &nbsp; &nbsp;
+<div class="pdf-paginator" id="pdf-paginator-de12fd17">
+    <button id="pdf-prev-de12fd17">Previous</button>
+    <button id="pdf-next-de12fd17">Next</button> &nbsp; &nbsp;
     <span>
-      <span class="pdf-pagenum" id="pdf-pagenum-da2c9fde"></span> / <span class="pdf-pagecount" id="pdf-pagecount-da2c9fde"></span>
+      <span class="pdf-pagenum" id="pdf-pagenum-de12fd17"></span> / <span class="pdf-pagecount" id="pdf-pagecount-de12fd17"></span>
     </span>
-    <a class="pdf-source" id="pdf-source-da2c9fde" href="/static/images/Michael_Tatum_VisualCV_Resume2025v2.pdf">[pdf]</a>
+    <a class="pdf-source" id="pdf-source-de12fd17" href="/static/images/Michael_Tatum_VisualCV_Resume2025v4-2.pdf">[pdf]</a>
 </div>
 
 <noscript>
-View the PDF file <a class="pdf-source" id="pdf-source-noscript-da2c9fde" href="/static/images/Michael_Tatum_VisualCV_Resume2025v2.pdf">here</a>.
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-de12fd17" href="/static/images/Michael_Tatum_VisualCV_Resume2025v4-2.pdf">here</a>.
 </noscript>
 
 <script type="text/javascript">
     (function(){
-    var url = '\/static\/images\/Michael_Tatum_VisualCV_Resume2025v2.pdf';
+    var url = '\/static\/images\/Michael_Tatum_VisualCV_Resume2025v4-2.pdf';
 
     var hidePaginator = "" === "true";
     var hideLoader = "true" === "true";
@@ -181,10 +178,10 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-da2c9fde" href="
         pageRendering = false,
         pageNumPending = null,
         scale = 3,
-        canvas = document.getElementById('pdf-canvas-da2c9fde'),
+        canvas = document.getElementById('pdf-canvas-de12fd17'),
         ctx = canvas.getContext('2d'),
-        paginator = document.getElementById("pdf-paginator-da2c9fde"),
-        loadingWrapper = document.getElementById('pdf-loadingWrapper-da2c9fde');
+        paginator = document.getElementById("pdf-paginator-de12fd17"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-de12fd17');
 
 
     
@@ -222,7 +219,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-da2c9fde" href="
       });
 
       
-      document.getElementById('pdf-pagenum-da2c9fde').textContent = num;
+      document.getElementById('pdf-pagenum-de12fd17').textContent = num;
     }
 
     
@@ -266,7 +263,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-da2c9fde" href="
       pageNum--;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-prev-da2c9fde').addEventListener('click', onPrevPage);
+    document.getElementById('pdf-prev-de12fd17').addEventListener('click', onPrevPage);
 
     
 
@@ -277,14 +274,14 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-da2c9fde" href="
       pageNum++;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-next-da2c9fde').addEventListener('click', onNextPage);
+    document.getElementById('pdf-next-de12fd17').addEventListener('click', onNextPage);
 
     
 
     pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
       pdfDoc = pdfDoc_;
       var numPages = pdfDoc.numPages;
-      document.getElementById('pdf-pagecount-da2c9fde').textContent = numPages;
+      document.getElementById('pdf-pagecount-de12fd17').textContent = numPages;
 
       
       if(pageNum > numPages) {
