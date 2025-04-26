@@ -36,16 +36,10 @@ A little bit about me when I'm logged off:
 
 {{< youtube b6LE2RakXQ8 >}}
 
-{{< youtube 2rdXvBwE-5c >}}
-
 ## ⚽ Soccer
 
 {{< figure src="/images/hugo-AFK/soccer1.gif" alt="College Soccer Photo" width="300" height="300" >}}
 
 {{< figure src="/images/hugo-AFK/soccer2.jpg" alt="College Soccer Photo" width="300" height="300" >}}
-
-{{< figure src="/images/hugo-AFK/coach1.JPG" alt="College Soccer Photo" width="300" height="300" >}}
-
-{{< figure src="/images/hugo-AFK/coach2.JPG" alt="College Soccer Photo" width="300" height="300" >}}
 
 ---
