@@ -3,13 +3,13 @@ title: "Greetings!"
 draft: false
 ---
 
-* I am a cloud Linux engineer based in the Austin metro area.
-* I manage servers from both the Debian and RHEL families of distributions.
-* I audit security with Kali and BlackArch.
-* I focus on cloud platforms, automation, and infrastructure-as-code.
-* I **[write](https://www.putorius.net/author/mtatum)** technical papers and documentation. 
-* I administer varied systems at scale with Ansible and SaltStack.
-* I assemble powerful and efficient **[hardware builds](https://www.facebook.com/marketplace/profile/100009407774967/)**.
+* I am a Cloud Linux Engineer based in the Austin metro area, bringing expertise in managing complex infrastructure.
+* I manage servers across both Debian and RHEL distributions.
+* I audit security with Kali and BlackArch to maintain a strong security posture.
+* I focus on key areas including cloud platforms, hardening, automation, and Infrastructure-as-Code to optimize performance.
+* I **[write](https://www.putorius.net/author/mtatum)** technical papers and documentation to articulate technical concepts clearly. 
+* I administer varied systems at scale with Ansible, ensuring consistent and reliable operations.
+* I assemble powerful and efficient **[hardware builds](https://www.facebook.com/marketplace/profile/100009407774967/)** demonstrating a hands-on understanding of system architecture.
 
 Consider joining me on my **[free newsletter](https://amaadmichael.substack.com/welcome/)**.
 

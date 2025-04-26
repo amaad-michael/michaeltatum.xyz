@@ -1,10 +1,8 @@
 ---
-title: "AFK"
+title: "AFK: Away From Keyboard 🥁⚽"
 date: 2025-04-18
 layout: "single"
 ---
-
-# Away From Keyboard 🥁⚽
 
 A little bit about me when I'm logged off:
 

@@ -8,12 +8,22 @@
     <language>en</language>
     <copyright>© 2025 AMT</copyright><atom:link href="https://michaeltatum.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AFK</title>
+      <title>Billing</title>
+      <link>https://michaeltatum.xyz/billing/</link>
+      <pubDate>Fri, 25 Apr 2025 20:31:00 -0500</pubDate>
+      
+      <guid>https://michaeltatum.xyz/billing/</guid>
+      <description>Payment options for my technical services Thank you for your business! To make your payment, you can use the following platforms:
+PayPal **Scan the QR code above or click [here](your_paypal_link) to pay via PayPal.** Cash App **Scan the QR code above or click [here](your_cashapp_link) to pay via Cash App.** Zelle **Scan the QR code above or pay directly via Zelle to: `your_zelle_info`** </description>
+    </item>
+    
+    <item>
+      <title>AFK: Away From Keyboard 🥁⚽</title>
       <link>https://michaeltatum.xyz/afk/</link>
       <pubDate>Fri, 18 Apr 2025 00:00:00 +0000</pubDate>
       
       <guid>https://michaeltatum.xyz/afk/</guid>
-      <description>Away From Keyboard 🥁⚽ A little bit about me when I&amp;rsquo;m logged off:
+      <description>A little bit about me when I&amp;rsquo;m logged off:
 🥁 High-School Drumline 🥁 College Drumming Originsl Music ⚽ Soccer </description>
     </item>
     
@@ -34,7 +44,7 @@
       <guid>https://michaeltatum.xyz/contact/</guid>
       <description>Feel free to reach out to me through any of the following methods:
 Email You can email me at amaad.michael@gmail.com.
-Social Media LinkedIn: A. Michael Tatum GitHub: amaad-michael Newsletter SubStack: PAYLOAD;; Michael Tatum’s Linux Newsletter
+Social Media LinkedIn: A. Michael Tatum GitHub: amaad-michael Instagram: amaad_michael Newsletter SubStack: PAYLOAD;; Michael Tatum’s Linux Newsletter
 Location I am based in the Austin, TX metro area.</description>
     </item>
     
@@ -44,7 +54,7 @@ Location I am based in the Austin, TX metro area.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://michaeltatum.xyz/about/</guid>
-      <description>I am a cloud Linux engineer based in the Austin metro area. I manage servers from both the Debian and RHEL families of distributions. I audit security with Kali and BlackArch. I focus on cloud platforms, automation, and infrastructure-as-code. I write technical papers and documentation. I administer varied systems at scale with Ansible and SaltStack. I assemble powerful and efficient hardware builds. Consider joining me on my free newsletter.</description>
+      <description>I am a Cloud Linux Engineer based in the Austin metro area, bringing expertise in managing complex infrastructure. I manage servers across both Debian and RHEL distributions. I audit security with Kali and BlackArch to maintain a strong security posture. I focus on key areas including cloud platforms, hardening, automation, and Infrastructure-as-Code to optimize performance. I write technical papers and documentation to articulate technical concepts clearly. I administer varied systems at scale with Ansible, ensuring consistent and reliable operations.</description>
     </item>
     
     <item>

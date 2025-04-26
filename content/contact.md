@@ -13,6 +13,7 @@ You can email me at [amaad.michael@gmail.com](mailto:amaad.michael@gmail.com).
 ## Social Media
 - **LinkedIn**: [A. Michael Tatum](https://www.linkedin.com/in/amaadmichael/)
 - **GitHub**: [amaad-michael](https://github.com/amaad-michael/)
+- **Instagram**: [amaad_michael](https://instagram.com/amaad_michael/)
 
 ## Newsletter
 **SubStack**: [PAYLOAD;; Michael Tatum’s Linux Newsletter](https://amaadmichael.substack.com/welcome/)

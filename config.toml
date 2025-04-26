@@ -54,6 +54,12 @@ icon = "far fa-newspaper"
 title = "Join my newsletter"
 url = "https://amaadmichael.substack.com/welcome/"
 
+[[params.socialLinks]]
+icon = "fa-brands fa-instagram"
+title = "IG"
+url = "https://instagram.com/amaad_michael/"
+
+
 [menu]
 
   [[menu.main]]
@@ -61,6 +67,12 @@ url = "https://amaadmichael.substack.com/welcome/"
     name = "About"
     url = "/about/"
     weight = 10
+
+#[[menu.main]]
+#    identifier = "billing"
+#    name = "Billing"
+#    url = "/billing/"
+#    weight = 10
 
  [[menu.main]]
     identifier = "afk"
