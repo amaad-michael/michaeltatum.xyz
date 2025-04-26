@@ -1,6 +1,5 @@
 ---
 title: "AFK: Away From Keyboard 🥁⚽"
-date: 2025-04-18
 layout: "single"
 ---
 
