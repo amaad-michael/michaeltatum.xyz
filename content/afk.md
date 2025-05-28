@@ -33,7 +33,7 @@ A little bit about me when I'm logged off:
 
 {{< youtube b6LE2RakXQ8 >}}
 
-## ⚽ High School Soccer
+## ⚽ High-School Soccer
 
 {{< figure src="/images/hugo-AFK/soccer1.gif" alt="College Soccer Photo" width="300" height="300" >}}
 
