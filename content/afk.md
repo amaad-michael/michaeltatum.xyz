@@ -25,7 +25,7 @@ A little bit about me when I'm logged off:
 
 {{< figure src="/images/hugo-AFK/openmic2.JPG" alt="College Drumming Photo" width="300" height="300" >}}
 
-## Originsl Music
+## College Originsl Music
 
 {{< youtube Muev9JLEV1k >}}
 
@@ -33,7 +33,7 @@ A little bit about me when I'm logged off:
 
 {{< youtube b6LE2RakXQ8 >}}
 
-## ⚽ Soccer
+## ⚽ High School Soccer
 
 {{< figure src="/images/hugo-AFK/soccer1.gif" alt="College Soccer Photo" width="300" height="300" >}}
 
