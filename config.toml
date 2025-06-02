@@ -8,11 +8,9 @@ languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 publishDir = "docs"
-
 # prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
-
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
 
@@ -33,7 +31,6 @@ logo = "/images/profile-cleaned.jpg"
 # Available icon sets:
 # * FontAwesome 5 <https://fontawesome.com/> ('fas fa-' or 'fab-fa' for brands)
 # * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
-
 [[params.socialLinks]]
 icon = "fab fa-github"
 title = "GitHub"
@@ -59,9 +56,7 @@ icon = "fa-brands fa-instagram"
 title = "IG"
 url = "https://instagram.com/amaad_michael/"
 
-
 [menu]
-
 [[menu.main]]
 identifier = "about"
 name = "About"
@@ -69,36 +64,36 @@ url = "/about/"
 weight = 10
 
 [[menu.main]]
- identifier = "afk"
- name = "AFK"
- url = "/afk/"
- weight = 10
+identifier = "afk"
+name = "AFK"
+url = "/afk/"
+weight = 20
 
 [[menu.main]]
- identifier = "certs"
- name = "Certs"
- url = "/certs/"
- weight = 10
+identifier = "certs"
+name = "Certs"
+url = "/certs/"
+weight = 30
 
 [[menu.main]]
- identifier = "contact"
- name = "Contact"
- url = "/contact/"
- weight = 10
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 40
 
 [[menu.main]]
- identifier = "resume"
- name = "Resume"
- url = "/resume/"
- weight = 10
+identifier = "resume"
+name = "Resume"
+url = "/resume/"
+weight = 50
 
 [[menu.main]]
- identifier = "siftDNS"
- name = "SiftDNS"
- url = "/siftDNS/"
- weight = 10
-## [menu.main.params]    
-## target = "_blank"  # Add this line
+identifier = "siftdns"
+name = "SiftDNS Portfolio"
+url = "/siftdns/"
+weight = 60
+[menu.main.params]
+target = "_blank"
 
 [taxonomies]
 category = "categories"
@@ -110,28 +105,22 @@ series = "series"
 unsafe = true
 
 [privacy]
-
   [privacy.vimeo]
     disabled = false
     simple = true
-
   [privacy.twitter]
     disabled = false
     enableDNT = true
     simple = true
-
   [privacy.instagram]
     disabled = false
     simple = true
-
   [privacy.youtube]
     disabled = false
     privacyEnhanced = true
 
 [services]
-
   [services.instagram]
     disableInlineCSS = true
-
   [services.twitter]
     disableInlineCSS = true
