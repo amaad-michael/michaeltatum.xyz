@@ -62,43 +62,43 @@ url = "https://instagram.com/amaad_michael/"
 
 [menu]
 
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-
-#[[menu.main]]
-#    identifier = "billing"
-#    name = "Billing"
-#    url = "/billing/"
-#    weight = 10
-
- [[menu.main]]
-    identifier = "afk"
-    name = "AFK"
-    url = "/afk/"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "certs"
-    name = "Certs"
-    url = "/certs/"
-    weight = 10
-
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 10
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
 
 [[menu.main]]
-    identifier = "resume"
-    name = "Resume"
-    url = "/resume/"
-    weight = 10
+ identifier = "afk"
+ name = "AFK"
+ url = "/afk/"
+ weight = 10
 
+[[menu.main]]
+ identifier = "certs"
+ name = "Certs"
+ url = "/certs/"
+ weight = 10
 
+[[menu.main]]
+ identifier = "contact"
+ name = "Contact"
+ url = "/contact/"
+ weight = 10
+
+[[menu.main]]
+ identifier = "resume"
+ name = "Resume"
+ url = "/resume/"
+ weight = 10
+
+[[menu.main]]
+ identifier = "siftDNS"
+ name = "SiftDNS"
+ url = "/siftDNS/"
+ weight = 10
+[menu.main.params]    
+target = "_blank"  # Add this line
 
 [taxonomies]
 category = "categories"

@@ -8,13 +8,12 @@
     <language>en</language>
     <copyright>© 2025 AMT</copyright><atom:link href="https://michaeltatum.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Billing</title>
-      <link>https://michaeltatum.xyz/billing/</link>
-      <pubDate>Fri, 25 Apr 2025 20:31:00 -0500</pubDate>
+      <title>SiftDNS - DNS Privacy Service</title>
+      <link>https://michaeltatum.xyz/siftdns/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://michaeltatum.xyz/billing/</guid>
-      <description>Payment options for my technical services Thank you for your business! To make your payment, you can use the following platforms:
-PayPal **Scan the QR code above or click [here](your_paypal_link) to pay via PayPal.** Cash App **Scan the QR code above or click [here](your_cashapp_link) to pay via Cash App.** Zelle **Scan the QR code above or pay directly via Zelle to: `your_zelle_info`** </description>
+      <guid>https://michaeltatum.xyz/siftdns/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -24,7 +23,7 @@ PayPal **Scan the QR code above or click [here](your_paypal_link) to pay via Pay
       
       <guid>https://michaeltatum.xyz/afk/</guid>
       <description>A little bit about me when I&amp;rsquo;m logged off:
-🥁 High-School Drumline 🥁 College Drumming Originsl Music ⚽ Soccer </description>
+🥁 High-School Drumline 🥁 College Drumming College Originsl Music ⚽ High-School Soccer </description>
     </item>
     
     <item>
@@ -54,7 +53,7 @@ Location I am based in the Austin, TX metro area.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://michaeltatum.xyz/about/</guid>
-      <description>I am a Cloud Linux Engineer based in the Austin metro area, bringing expertise in managing complex infrastructure. I manage servers across both Debian and RHEL distributions. I audit security with Kali and BlackArch to maintain a strong security posture. I focus on key areas including cloud platforms, hardening, automation, and Infrastructure-as-Code to optimize performance. I write technical papers and documentation to articulate technical concepts clearly. I administer varied systems at scale with Ansible, ensuring consistent and reliable operations.</description>
+      <description>I am a Cloud Linux Engineer based in the Austin metro area, bringing expertise in managing complex infrastructure. I orchestrate servers across both Debian and RHEL distributions. I audit security with Kali and BlackArch to maintain a strong security posture. I focus on key areas including cloud platforms, hardening, automation, and Infrastructure-as-Code to optimize performance. I write technical papers and documentation to articulate technical concepts clearly. I administer varied systems at scale with Ansible, ensuring consistent and reliable operations.</description>
     </item>
     
     <item>
