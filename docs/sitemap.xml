@@ -3,25 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://michaeltatum.xyz/siftdns/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-06-02T00:28:41-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/</loc>
     <priority>0</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/afk/</loc>
+    <lastmod>2025-05-28T10:41:19-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/certs/</loc>
+    <lastmod>2024-10-10T16:17:25-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/contact/</loc>
+    <lastmod>2025-04-25T21:30:37-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/about/</loc>
+    <lastmod>2025-05-28T10:40:14-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/resume/</loc>
+    <lastmod>2025-04-17T21:50:40-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/series/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>https://michaeltatum.xyz/tags/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

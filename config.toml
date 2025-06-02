@@ -1,126 +1,221 @@
+# Base Configuration
 baseURL = "https://michaeltatum.xyz"
 theme = ["hugo-embed-pdf-shortcode", "risotto"]
 title = "Michael Tatum"
-author = "Michael Tatum"
+author = "A. Michael Tatum"
 copyright = "© 2025 AMT"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
 publishDir = "docs"
-# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
-# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+
+# Performance & Build Optimizations
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+enableEmoji = true
+
+# Prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API
 ignoreErrors = ["error-remote-getjson"]
+
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
 
+# Build Configuration
+[build]
+  writeStats = true
+  noJSConfigInAssets = false
+
+# Minification Settings (Fixed!)
+[minify]
+  disableXML = true
+  minifyOutput = true
+  [minify.tdewolff]
+    [minify.tdewolff.html]
+      keepDocumentTags = true
+      keepQuotes = false
+    [minify.tdewolff.css]
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.js]
+      keepVarNames = false
+      precision = 0
+
+# Markup Configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNumbersInTable = true
+    noClasses = false
+    tabWidth = 4
+
+# Site Parameters
 [params]
-favicon = "./static/images/bash.png"
+  favicon = "./static/images/bash.png"
+  defaultImage = "/images/profile-cleaned.jpg"
+  
+  # SEO & Meta
+  description = "A. Michael Tatum - Full-stack developer & systems architect. Digital CV and portfolio featuring SiftDNS and other technical projects."
+  keywords = ["Michael Tatum", "Full-stack Developer", "Systems Architect", "SiftDNS", "Portfolio", "DNS Privacy"]
+  
+  # Schema.org structured data
+  [params.schema]
+    authorName = "A. Michael Tatum"
+    authorImage = "/images/profile-cleaned.jpg"
+    sameAs = [
+      "https://github.com/amaad-michael/",
+      "https://www.linkedin.com/in/amaadmichael/",
+      "https://instagram.com/amaad_michael/",
+      "https://amaadmichael.substack.com/"
+    ]
 
-[params.theme]
-palette = "gruvbox-dark"
-mode = "dark-mode"
+  # Theme Configuration
+  [params.theme]
+    palette = "gruvbox-dark"
+    mode = "dark-mode"
 
-# Sidebar: about/bio
-[params.about]
-title = "A. Michael Tatum"
-description = "Welcome! This is my digital CV."
-logo = "/images/profile-cleaned.jpg"
+  # Sidebar: about/bio
+  [params.about]
+    title = "A. Michael Tatum"
+    description = "Welcome! This is my digital CV."
+    logo = "/images/profile-cleaned.jpg"
 
-# Sidebar: social links
-# Available icon sets:
-# * FontAwesome 5 <https://fontawesome.com/> ('fas fa-' or 'fab-fa' for brands)
-# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+# Social Links Configuration
 [[params.socialLinks]]
-icon = "fab fa-github"
-title = "GitHub"
-url = "https://github.com/amaad-michael/"
+  icon = "fab fa-github"
+  title = "GitHub"
+  url = "https://github.com/amaad-michael/"
 
 [[params.socialLinks]]
-icon = "fas fa-envelope"
-title = "Email"
-url = "mailto:amaad.michael@gmail.com"
+  icon = "fas fa-envelope"
+  title = "Email"
+  url = "mailto:amaad.michael@gmail.com"
 
 [[params.socialLinks]]
-icon = "fab fa-linkedin"
-title = "LinkedIn"
-url = "https://www.linkedin.com/in/amaadmichael/"
+  icon = "fab fa-linkedin"
+  title = "LinkedIn"
+  url = "https://www.linkedin.com/in/amaadmichael/"
 
 [[params.socialLinks]]
-icon = "far fa-newspaper"
-title = "Join my newsletter"
-url = "https://amaadmichael.substack.com/welcome/"
+  icon = "far fa-newspaper"
+  title = "Join my newsletter"
+  url = "https://amaadmichael.substack.com/welcome/"
 
 [[params.socialLinks]]
-icon = "fa-brands fa-instagram"
-title = "IG"
-url = "https://instagram.com/amaad_michael/"
+  icon = "fa-brands fa-instagram"
+  title = "IG"
+  url = "https://instagram.com/amaad_michael/"
 
+# Main Navigation Menu
 [menu]
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
 
-[[menu.main]]
-identifier = "afk"
-name = "AFK"
-url = "/afk/"
-weight = 20
+  [[menu.main]]
+    identifier = "afk"
+    name = "AFK"
+    url = "/afk/"
+    weight = 20
 
-[[menu.main]]
-identifier = "certs"
-name = "Certs"
-url = "/certs/"
-weight = 30
+  [[menu.main]]
+    identifier = "certs"
+    name = "Certs"
+    url = "/certs/"
+    weight = 30
 
-[[menu.main]]
-identifier = "contact"
-name = "Contact"
-url = "/contact/"
-weight = 40
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 40
 
-[[menu.main]]
-identifier = "resume"
-name = "Resume"
-url = "/resume/"
-weight = 50
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume/"
+    weight = 50
 
-[[menu.main]]
-identifier = "siftdns"
-name = "SiftDNS Portfolio"
-url = "/siftdns/"
-weight = 60
-[menu.main.params]
-target = "_blank"
+  [[menu.main]]
+    identifier = "siftdns"
+    name = "SiftDNS Portfolio"
+    url = "/siftdns/"
+    weight = 60
+    [menu.main.params]
+      target = "_blank"
 
+# Content Taxonomies
 [taxonomies]
-category = "categories"
-tag = "tags"
-series = "series"
+  category = "categories"
+  tag = "tags"
+  series = "series"
 
-# For hugo >= 0.60.0, enable inline HTML
-[markup.goldmark.renderer]
-unsafe = true
-
+# Privacy Configuration
 [privacy]
   [privacy.vimeo]
     disabled = false
     simple = true
+
   [privacy.twitter]
     disabled = false
     enableDNT = true
     simple = true
+
   [privacy.instagram]
     disabled = false
     simple = true
+
   [privacy.youtube]
     disabled = false
     privacyEnhanced = true
 
+# External Services Configuration
 [services]
   [services.instagram]
     disableInlineCSS = true
+
   [services.twitter]
     disableInlineCSS = true
+
+# Output Formats
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+# Sitemap Configuration
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Related Content Configuration
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = false
+  
+  [[related.indices]]
+    name = "keywords"
+    weight = 100
+  
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  
+  [[related.indices]]
+    name = "categories"
+    weight = 60
