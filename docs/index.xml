@@ -8,6 +8,15 @@
     <language>en</language>
     <copyright>© 2025 AMT</copyright><atom:link href="https://michaeltatum.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>SiftDNS - DNS Privacy Service</title>
+      <link>https://michaeltatum.xyz/siftdns/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://michaeltatum.xyz/siftdns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>AFK: Away From Keyboard 🥁⚽</title>
       <link>https://michaeltatum.xyz/afk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -54,15 +63,6 @@ Location I am based in the Austin, TX metro area.</description>
       
       <guid>https://michaeltatum.xyz/resume/</guid>
       <description> Previous Next &amp;nbsp; &amp;nbsp; / [pdf] View the PDF file here. </description>
-    </item>
-    
-    <item>
-      <title>SiftDNS</title>
-      <link>https://michaeltatum.xyz/siftdns/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://michaeltatum.xyz/siftdns/</guid>
-      <description></description>
     </item>
     
   </channel>
