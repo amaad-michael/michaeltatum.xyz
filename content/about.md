@@ -1,18 +1,21 @@
 ---
 title: "Greetings!"
 draft: false
+description: "Introduction to A. Michael Tatum, a Cloud Linux Engineer specializing in cloud platforms, security, and automation."
+date: 2025-06-03
+# tags: ["introduction", "cloud engineering", "linux", "security"]
 ---
 
-* I am a Cloud Linux Engineer based in the Austin metro area, bringing expertise in managing complex infrastructure.
+* I am a Cloud Linux Engineer based in the Austin metro area, adept at managing complex infrastructure.
 * I orchestrate servers across both Debian and RHEL distributions.
-* I audit security with Kali and BlackArch to maintain a strong security posture.
-* I focus on key areas including cloud platforms, hardening, automation, and Infrastructure-as-Code to optimize performance.
-* I **[write](https://www.putorius.net/author/mtatum)** technical papers and documentation to articulate technical concepts clearly. 
-* I administer varied systems at scale with Ansible, ensuring consistent and reliable operations.
-* I assemble powerful and efficient **[hardware builds](https://www.facebook.com/marketplace/profile/100009407774967/)** demonstrating a hands-on understanding of system architecture.
+* I audit and enhance system security using tools like Kali and BlackArch to ensure a robust security posture.
+* I focus on cloud platforms, system hardening, automation, and Infrastructure-as-Code, aimed at optimizing performance and reliability.
+* I **[write](https://www.putorius.net/author/mtatum)** technical papers and documentation, clearly articulating complex technical concepts.
+* I administer diverse systems at scale using Ansible for consistent and reliable operations.
+* I assemble powerful and efficient **[custom hardware builds](https://www.facebook.com/marketplace/profile/100009407774967/)**, showcasing a practical understanding of system architecture.
 
-Consider joining me on my **[free newsletter](https://amaadmichael.substack.com/welcome/)**.
+Consider joining my **[free newsletter](https://amaadmichael.substack.com/welcome/)** for insights and updates.
 
-<img src="/images/kali-server-rack-20180125-02.jpeg" alt="Kali + Bare Metal" width="400" height="400">
+{{< figure src="/images/kali-server-rack-20180125-02.jpeg" alt="Server rack with network equipment, illuminated by a Kali Linux desktop, illustrating a bare-metal server environment." width="400" height="400"  >}}
 
 ---
