@@ -1,5 +1,5 @@
 # Base Configuration
-baseURL = "https://michaeltatum.xyz/" # Added trailing slash for consistency, Hugo often handles it but explicit can be clearer
+baseURL = "https://michaeltatum.xyz/"
 theme = ["hugo-embed-pdf-shortcode", "risotto"]
 title = "Michael Tatum"
 author = "A. Michael Tatum"
@@ -88,39 +88,30 @@ ignoreErrors = ["error-remote-getjson"]
     description = "Welcome! This is my digital CV."
     logo = "/images/profile-cleaned.jpg"
 
-# This is the new section to add within your [params] block in config.toml
-
+  # Configuration for the Sidebar QR Code
   [params.sidebarQrCode]
-    enable = true # Set to false to hide the QR code
+    enable = true 
     image = "/images/qr_4gMdR845R7eLcMNdAXcQU00.png" # Path to your QR code image from the 'static' directory
     altText = "Scan to subscribe to my newsletter"
-    # You can define a CSS class here that your custom.css will use to style the size
-    # This class 'qr-code-sidebar-small' will be used in your custom.css to make it "very small"
-    cssClass = "qr-code-sidebar-small" 
-    # Optional caption to display below the QR code if your template supports it
-    # caption = "Scan to Subscribe!"
+    cssClass = "qr-code-sidebar-small"                # CSS class for styling (size, etc.)
 
 # Social Links (typically used by themes)
 [[params.socialLinks]]
   icon = "fab fa-github"
   title = "GitHub"
   url = "https://github.com/amaad-michael/"
-
 [[params.socialLinks]]
   icon = "fas fa-envelope"
   title = "Email"
   url = "mailto:amaad.michael@gmail.com"
-
 [[params.socialLinks]]
   icon = "fab fa-linkedin"
   title = "LinkedIn"
   url = "https://www.linkedin.com/in/amaadmichael/"
-
 [[params.socialLinks]]
   icon = "far fa-newspaper"
   title = "Join my newsletter"
   url = "https://amaadmichael.substack.com/welcome/"
-
 [[params.socialLinks]]
   icon = "fa-brands fa-instagram" # Updated for Font Awesome 6+ if applicable
   title = "IG"

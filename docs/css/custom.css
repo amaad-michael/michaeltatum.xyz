@@ -16,8 +16,7 @@
   margin: 0;
 }
 
-/* Optional: Uncomment and adjust if you want to control homepage logo image sizes directly via CSS,
-   assuming your figure shortcodes for these logos don't already set explicit widths that suffice.
+/* Optional: Uncomment and adjust if you want to control homepage logo image sizes directly via CSS.
 .homepage-logo-strip .figure.home-logo img {
   max-height: 80px;
   width: auto;
@@ -39,7 +38,7 @@ img.qr-code-sidebar-small {
   width: 60px;         /* ADJUST THIS VALUE for your desired "very small" size.
                           Examples: 50px, 60px, 70px. */
   height: auto;        /* Maintain aspect ratio */
-  max-width: 50%;     /* Prevent overflow if the sidebar is narrower than the image width */
+  max-width: 100%;     /* Prevent overflow if the sidebar is narrower than the image width */
   border-radius: 4px;  /* Optional: for slightly rounded corners */
   display: block;      /* Treat the image as a block element */
   margin-left: 0;      /* Align to the left */
