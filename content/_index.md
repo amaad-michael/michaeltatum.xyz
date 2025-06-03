@@ -1,12 +1,11 @@
 ---
-title: "A. Michael Tatum"
+title: "Hello, World."
 description: "Homepage for A. Michael Tatum, Cloud Linux Engineer. Explore projects, articles, and more."
 draft: false
 ---
 
 <div class="homepage-logo-strip">
-  {{< figure src="images/sp.png" alt="[**Please describe what sp.png represents - e.g., 'SiftDNS Project Logo', 'Partner Company Logo', etc.**]" class="home-logo" width="100" >}}
-  {{< figure src="images/mt-logo.png" alt="Michael Tatum - Personal Monogram Logo" class="home-logo" width="300" >}}
+  {{< figure src="images/mt-logo.png" alt="Michael Tatum - Personal Monogram Logo" class="home-logo" width="500" >}}
 </div>
 
 # Hello! I'm A. Michael Tatum
