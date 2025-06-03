@@ -1,20 +1,63 @@
-/* Custom styles for homepage logos */
+/* static/css/custom.css */
+
+/* ===== Homepage Logo Strip ===== */
+/* Styles for the container of the main homepage logos (e.g., avatar and hexagonal logo) */
 .homepage-logo-strip {
-  display: flex; /* Enables flexbox layout */
-  justify-content: center; /* Centers the logos within the container. Use 'flex-start' to left-align, 'flex-end' to right-align. */
-  align-items: center; /* Vertically aligns logos if they are different heights */
-  gap: 20px; /* Adjust the space between the logos */
-  margin-bottom: 2em; /* Space below the logo strip */
-  flex-wrap: wrap; /* Allows logos to stack on very small screens if necessary */
+  display: flex;
+  justify-content: center; /* Horizontally centers the group of logos */
+  align-items: center;   /* Vertically aligns logos if they have different heights */
+  gap: 20px;             /* Space between individual logos */
+  margin-bottom: 2em;    /* Space below the entire logo strip */
+  flex-wrap: wrap;       /* Allows logos to stack on very small screens if necessary */
 }
 
-/* Optional: If figures have default margins you want to remove or adjust for this context */
+/* Removes default margins from figure elements used for logos within the strip, if they have the 'home-logo' class */
 .homepage-logo-strip .figure.home-logo {
   margin: 0;
 }
 
-/* You can also control image size more specifically here if needed */
+/* Optional: Uncomment and adjust if you want to control homepage logo image sizes directly via CSS,
+   assuming your figure shortcodes for these logos don't already set explicit widths that suffice.
 .homepage-logo-strip .figure.home-logo img {
-  /* Example: max-height: 80px; */
-  /* width: auto; // if using max-height to maintain aspect ratio */
+  max-height: 80px;
+  width: auto;
 }
+*/
+
+/* ===== Sidebar QR Code ===== */
+/* Styling for the QR Code Widget container in the sidebar */
+.qr-code-widget {
+  margin-top: 20px;    /* Space above the QR code in the sidebar */
+  margin-bottom: 15px; /* Space below */
+  text-align: left;    /* Aligns any inline content (like a caption, if added) to the left */
+}
+
+/* Styling for the QR code image itself.
+   This targets the image if it has the class "qr-code-sidebar-small"
+   (which is set via 'cssClass' in config.toml's [params.sidebarQrCode] section). */
+img.qr-code-sidebar-small {
+  width: 60px;         /* ADJUST THIS VALUE for your desired "very small" size.
+                          Examples: 50px, 60px, 70px. */
+  height: auto;        /* Maintain aspect ratio */
+  max-width: 100%;     /* Prevent overflow if the sidebar is narrower than the image width */
+  border-radius: 4px;  /* Optional: for slightly rounded corners */
+  display: block;      /* Treat the image as a block element */
+  margin-left: 0;      /* Align to the left */
+  margin-right: 0;     /* Ensure it doesn't try to center itself using auto margin */
+}
+
+/*
+   Alternative selector for the QR code image if you didn't use the 'cssClass'
+   parameter from config.toml on the <img> tag, and prefer to target any image
+   directly inside a .qr-code-widget container:
+
+.qr-code-widget img {
+  width: 60px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 4px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+*/

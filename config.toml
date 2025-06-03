@@ -88,6 +88,18 @@ ignoreErrors = ["error-remote-getjson"]
     description = "Welcome! This is my digital CV."
     logo = "/images/profile-cleaned.jpg"
 
+# This is the new section to add within your [params] block in config.toml
+
+  [params.sidebarQrCode]
+    enable = true # Set to false to hide the QR code
+    image = "/images/qr_4gMdR845R7eLcMNdAXcQU00.png" # Path to your QR code image from the 'static' directory
+    altText = "Scan to subscribe to my newsletter"
+    # You can define a CSS class here that your custom.css will use to style the size
+    # This class 'qr-code-sidebar-small' will be used in your custom.css to make it "very small"
+    cssClass = "qr-code-sidebar-small" 
+    # Optional caption to display below the QR code if your template supports it
+    # caption = "Scan to Subscribe!"
+
 # Social Links (typically used by themes)
 [[params.socialLinks]]
   icon = "fab fa-github"
