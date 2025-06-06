@@ -7,4 +7,14 @@ description: "View and download the latest resume/CV for A. Michael Tatum, detai
 # aliases: ["/resume.html", "/cv/"]
 ---
 
-{{< embed-pdf url="/static/images/Michael_Tatum_VisualCV_Resume.pdf" hideLoader="true" >}}
+<div style="width: 100%; height: 800px; overflow: hidden;">
+    <iframe 
+        src="/static/images/Michael_Tatum_VisualCV_Resume.pdf" 
+        width="100%" 
+        height="100%" 
+        style="border: none;"
+        title="Michael Tatum Resume"
+        type="application/pdf">
+        <p>Your browser does not support embedding PDFs directly. You can <a href="/static/images/Michael_Tatum_VisualCV_Resume.pdf" download>download the resume here</a>.</p>
+    </iframe>
+</div>
