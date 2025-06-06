@@ -1,7 +1,7 @@
 # Base Configuration
 baseURL = "https://michaeltatum.xyz/"
 theme = ["hugo-embed-pdf-shortcode", "risotto"]
-title = "Michael Tatum"
+title = "A. Michael Tatum"
 author = "A. Michael Tatum"
 copyright = "© 2025 AMT"
 paginate = 3

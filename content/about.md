@@ -14,8 +14,6 @@ date: 2025-06-03
 * I administer diverse systems at scale using Ansible for consistent and reliable operations.
 * I assemble powerful and efficient **[custom hardware builds](https://www.facebook.com/marketplace/profile/100009407774967/)**, showcasing a practical understanding of system architecture.
 
-Consider joining my **[free newsletter](https://amaadmichael.substack.com/welcome/)** for insights and updates.
-
 {{< figure src="/images/kali-server-rack-20180125-02.jpeg" alt="Server rack with network equipment, illuminated by a Kali Linux desktop, illustrating a bare-metal server environment." width="400" height="400"  >}}
 
 ---

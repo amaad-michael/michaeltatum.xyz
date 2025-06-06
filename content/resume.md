@@ -18,3 +18,5 @@ description: "View and download the latest resume/CV for A. Michael Tatum, detai
         <p>Your browser does not support embedding PDFs directly. You can <a href="/static/images/Michael_Tatum_VisualCV_Resume.pdf" download>download the resume here</a>.</p>
     </iframe>
 </div>
+
+---

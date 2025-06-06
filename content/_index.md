@@ -19,4 +19,3 @@ I'm a Cloud Linux Engineer based in the Austin metro area, passionate about buil
 * Want to get in touch? **[Drop me a line!](/contact/)**
 
 ---
-*Consider joining my **[free newsletter](https://amaadmichael.substack.com/welcome/)** for regular updates and articles.*
