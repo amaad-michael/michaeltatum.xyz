@@ -109,10 +109,6 @@ ignoreErrors = ["error-remote-getjson"]
   title = "LinkedIn"
   url = "https://www.linkedin.com/in/amaadmichael/"
 [[params.socialLinks]]
-  icon = "far fa-newspaper"
-  title = "Join my newsletter"
-  url = "https://amaadmichael.substack.com/welcome/"
-[[params.socialLinks]]
   icon = "fa-brands fa-instagram" # Updated for Font Awesome 6+ if applicable
   title = "IG"
   url = "https://instagram.com/amaad_michael/"
@@ -145,7 +141,7 @@ ignoreErrors = ["error-remote-getjson"]
     weight = 50
   [[menu.main]]
     identifier = "siftdns"
-    name = "SiftDNS Portfolio"
+    name = "SiftDNS"
     url = "/siftdns/"
     weight = 60
     [menu.main.params] # Corrected nesting for target attribute
