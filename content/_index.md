@@ -10,7 +10,7 @@ draft: false
 
 # Hello! I'm A. Michael Tatum
 
-I'm a Cloud Linux Engineer based in the Austin metro area, passionate about building resilient infrastructure, enhancing security, and automating solutions. This site serves as my digital CV, resume, and portfolio.
+I'm a Cloud Linux Engineer based right outside the Austin metro area, passionate about building resilient infrastructure, enhancing security, and automating solutions. This site serves as my digital CV, resume, and portfolio.
 
 ## Explore Further
 * Dive into my **[SiftDNS Portfolio](/siftdns/)** to see my most recent project in action.

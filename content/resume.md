@@ -1,7 +1,7 @@
 ---
 title: "Resume / CV"
 draft: false
-date: 2025-06-03
+date: 2025-08-28
 description: "View and download the latest resume/CV for A. Michael Tatum, detailing skills, experience, and education."
 # Optional: If this page had a previous URL, you can add an alias
 # aliases: ["/resume.html", "/cv/"]

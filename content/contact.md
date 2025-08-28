@@ -1,8 +1,8 @@
 ---
 title: "Drop me a line!"
 draft: false
-date: 2025-06-03
-description: "Contact A. Michael Tatum via email, social media. Based in Austin, TX."
+date: 2025-08-28
+description: "Contact A. Michael Tatum via email, social media. Based in Texas, USA."
 ---
 
 Feel free to reach out to me through any of the following methods:
@@ -20,7 +20,7 @@ You can email me at [amaad.michael@gmail.com](mailto:amaad.michael@gmail.com).
 {{< figure src="/images/nail-gilfanov-TuyneoFacJg-unsplash.jpg" alt="" width="400" height="400" >}}
 
 ## Location
-I am based in the Austin, TX metro area.
+I am based slightly north of the Austin, TX metro area.
 
 {{< figure src="/images/daniel-l-wIKlZf8Jg4c-unsplash.jpg" alt="" width="400" height="400" >}}
 

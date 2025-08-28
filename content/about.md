@@ -2,11 +2,11 @@
 title: "Greetings!"
 draft: false
 description: "Introduction to A. Michael Tatum, a Cloud Linux Engineer specializing in cloud platforms, security, and automation."
-date: 2025-06-03
+date: 2025-08-28
 # tags: ["introduction", "cloud engineering", "linux", "security"]
 ---
 
-* I am a Cloud Linux Engineer based in the Austin metro area, adept at managing complex infrastructure.
+* I am a Cloud Linux Engineer based right outside the Austin metro area, adept at managing complex infrastructure.
 * I orchestrate servers across both Debian and RHEL distributions.
 * I audit and enhance system security using tools like Kali and BlackArch to ensure a robust security posture.
 * I focus on cloud platforms, system hardening, automation, and Infrastructure-as-Code, aimed at optimizing performance and reliability.

@@ -1,9 +1,9 @@
 ---
 title: "AFK: Away From Keyboard 🥁⚽"
 layout: "single"
-# date: 2025-06-03 # Optional: Consider adding for content management
+date: 2025-08-28 
 # description: "A glimpse into my life away from the keyboard, featuring drumming and soccer." # Optional: For SEO
-# draft: false # Optional: Set to true if it's not ready to publish
+draft: false 
 ---
 
 A little bit about me when I'm logged off:
