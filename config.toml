@@ -175,7 +175,7 @@ ignoreErrors = ["error-remote-getjson"]
     disableInlineCSS = true # Useful if your theme or custom CSS handles styling
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"] # JSON for headless or custom integrations
+  home = ["HTML", "RSS"] # Removed JSON since it's not being used
   page = ["HTML"]
   section = ["HTML", "RSS"]
 
