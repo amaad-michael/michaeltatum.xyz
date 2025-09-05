@@ -10,7 +10,7 @@ draft: false
 
 # Hello! I'm A. Michael Tatum.
 
-I'm a Cloud Linux Engineer based near Austin, Texas, specializing in architecting secure, scalable cloud solutions that drive measurable business impact. With deep expertise in Linux systems, Infrastructure as Code, and automation, I build resilient, high-availability infrastructure while implementing comprehensive security and compliance frameworks. My engineering approach focuses on outcomes that matter; whether that's accelerating deployment cycles, maximizing uptime, or optimizing costs through intelligent resource management. This site showcases my professional journey, technical projects, and commitment to continuous learning in cloud-native technologies.
+As a Cloud Linux Engineer in the Austin, Texas area, I architect secure, scalable, and cost-effective cloud infrastructure that delivers measurable business results. With deep expertise in Linux, Infrastructure as Code (IaC), and automation, I build resilient, high-availability systems designed to accelerate deployment cycles, maximize uptime, and meet rigorous security and compliance standards. My focus is on engineering tangible outcomes through intelligent cloud-native solutions.
 
 ## Explore Further
 * Dive into my **[SiftDNS Portfolio](/siftdns/)** to see my most recent project in action.
