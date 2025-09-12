@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SiftDNS - DNS Privacy Service | A. Michael Tatum Portfolio</title>
     <meta name="description" content="A production-ready DNS privacy service built from the ground up. Delivering enterprise-grade ad blocking and privacy protection through custom filtering infrastructure.">
-    
     <style>
-        /* Modern Portfolio Styling */
         :root {
             --primary: #4f46e5;
             --primary-dark: #4338ca;
@@ -34,24 +33,23 @@
             --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25)
         }
 
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            box-sizing: border-box
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, sans-serif;
             background: linear-gradient(to bottom, var(--gray-50), var(--white));
             color: var(--gray-900);
-            line-height: 1.6;
-            overflow-x: hidden;
+            line-height: 2;
+            overflow-x: hidden
         }
 
-        /* Floating Animation Background */
         .bg-animation {
             position: fixed;
             top: 0;
@@ -59,14 +57,14 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .floating-shape {
             position: absolute;
             border-radius: 50%;
-            opacity: 0.05;
-            animation: float 20s infinite ease-in-out;
+            opacity: .05;
+            animation: float 20s infinite ease-in-out
         }
 
         .shape-1 {
@@ -75,7 +73,7 @@
             background: var(--primary);
             top: 20%;
             left: 10%;
-            animation-delay: 0s;
+            animation-delay: 0s
         }
 
         .shape-2 {
@@ -84,7 +82,7 @@
             background: var(--accent);
             top: 60%;
             right: 10%;
-            animation-delay: -5s;
+            animation-delay: -5s
         }
 
         .shape-3 {
@@ -93,31 +91,43 @@
             background: var(--secondary);
             top: 40%;
             left: 80%;
-            animation-delay: -10s;
+            animation-delay: -10s
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
-            25% { transform: translateY(-20px) translateX(10px) rotate(90deg); }
-            50% { transform: translateY(0px) translateX(20px) rotate(180deg); }
-            75% { transform: translateY(-10px) translateX(-10px) rotate(270deg); }
+
+            0%,
+            100% {
+                transform: translateY(0)translateX(0)rotate(0)
+            }
+
+            25% {
+                transform: translateY(-20px)translateX(10px)rotate(90deg)
+            }
+
+            50% {
+                transform: translateY(0)translateX(20px)rotate(180deg)
+            }
+
+            75% {
+                transform: translateY(-10px)translateX(-10px)rotate(270deg)
+            }
         }
 
-        /* Enhanced Navigation */
         .nav {
             position: sticky;
             top: 0;
-            background: rgba(255, 255, 255, 0.95);
+            background: #fff;
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--gray-200);
             padding: 1rem 0;
             z-index: 100;
-            transition: all 0.3s ease;
+            transition: all .3s ease
         }
 
         .nav.scrolled {
-            background: rgba(255, 255, 255, 0.98);
-            box-shadow: var(--shadow-lg);
+            background: #fff;
+            box-shadow: var(--shadow-lg)
         }
 
         .nav-container {
@@ -126,13 +136,13 @@
             padding: 0 2rem;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center
         }
 
         .nav-brand-section {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1rem
         }
 
         .nav-avatar {
@@ -143,38 +153,38 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #fff;
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1rem
         }
 
         .nav-info h3 {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
             color: var(--gray-900);
-            margin: 0;
+            margin: 0
         }
 
         .nav-info p {
-            font-size: 0.85rem;
+            font-size: .9rem;
             color: var(--gray-600);
-            margin: 0;
+            margin: 0
         }
 
         .nav-links {
             display: flex;
             gap: 2rem;
-            list-style: none;
+            list-style: none
         }
 
         .nav-links a {
             color: var(--gray-600);
             text-decoration: none;
             font-weight: 500;
-            padding: 0.5rem 1rem;
+            padding: .5rem 1rem;
             border-radius: 8px;
-            transition: all 0.3s ease;
-            position: relative;
+            transition: all .3s ease;
+            position: relative
         }
 
         .nav-links a::after {
@@ -186,38 +196,45 @@
             width: 0;
             height: 2px;
             background: var(--primary);
-            transition: width 0.3s ease;
+            transition: width .3s ease
         }
 
         .nav-links a:hover,
         .nav-links a.active {
             color: var(--primary);
-            background: rgba(79, 70, 229, 0.1);
+            background: rgba(79, 70, 229, .1)
         }
 
         .nav-links a:hover::after,
         .nav-links a.active::after {
-            width: calc(100% - 2rem);
+            width: calc(100% - 2rem)
         }
 
-        /* Enhanced Hero Section */
         .hero {
             background: var(--gradient-hero);
             background-size: 200% 200%;
             animation: gradientShift 15s ease infinite;
-            color: white;
+            color: #fff;
             padding: 6rem 2rem 4rem;
             position: relative;
             overflow: hidden;
             min-height: 100vh;
             display: flex;
-            align-items: center;
+            align-items: center
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0
+            }
+
+            50% {
+                background-position: 100%
+            }
+
+            100% {
+                background-position: 0
+            }
         }
 
         .hero::before {
@@ -227,9 +244,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(255,255,255,0.08) 0%, transparent 40%);
+            background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, .1) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 8%) 0%, transparent 40%)
         }
 
         .hero::after {
@@ -239,7 +254,7 @@
             left: 0;
             right: 0;
             height: 100px;
-            background: linear-gradient(to top, rgba(249, 250, 251, 0.8), transparent);
+            background: linear-gradient(to top, rgba(249, 250, 251, .8), transparent)
         }
 
         .hero-content {
@@ -247,184 +262,189 @@
             margin: 0 auto;
             position: relative;
             z-index: 1;
-            animation: heroFadeIn 1s ease-out;
+            animation: heroFadeIn 1s ease-out
         }
 
         @keyframes heroFadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
         }
 
         .hero-badge {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 0.75rem 1.5rem;
+            gap: .5rem;
+            background: rgba(255, 255, 255, .2);
+            color: #fff;
+            padding: .8rem 2rem;
             border-radius: 50px;
-            font-size: 0.9rem;
+            font-size: .9rem;
             font-weight: 600;
             margin-bottom: 2rem;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, .1)
         }
 
         .hero h1 {
             font-size: clamp(3rem, 8vw, 5rem);
             font-weight: 900;
             margin-bottom: 1rem;
-            line-height: 1.1;
+            line-height: 1;
             background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background-clip: text
         }
 
         .hero-subtitle {
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-bottom: 1rem;
-            opacity: 0.95;
-            font-weight: 600;
+            opacity: 1;
+            font-weight: 600
         }
 
         .hero-description {
-            font-size: 1.25rem;
+            font-size: 1rem;
             margin-bottom: 3rem;
-            opacity: 0.9;
+            opacity: .9;
             max-width: 800px;
-            line-height: 1.7;
+            line-height: 2
         }
 
         .hero-author {
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 3rem;
-            opacity: 0.8;
-            font-weight: 500;
+            opacity: .8;
+            font-weight: 500
         }
 
         .hero-cta {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: white;
+            gap: .5rem;
+            background: #fff;
             color: var(--primary);
             padding: 1rem 2rem;
             border-radius: 12px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
+            font-size: 1rem;
+            transition: all .3s ease;
             box-shadow: var(--shadow-xl);
-            margin-bottom: 3rem;
+            margin-bottom: 3rem
         }
 
         .hero-cta:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-2xl);
+            box-shadow: var(--shadow-2xl)
         }
 
         .hero-metrics {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 3rem
         }
 
         .metric {
             text-align: center;
-            padding: 2rem 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            background: rgba(255, 255, 255, .1);
             border-radius: 20px;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, .1);
+            transition: all .3s ease
         }
 
         .metric:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, .2)
         }
 
         .metric-value {
             display: block;
             font-size: 3rem;
             font-weight: 900;
-            margin-bottom: 0.5rem;
+            margin-bottom: .5rem;
             background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
+            background-clip: text
         }
 
         .metric-label {
             font-size: 1rem;
-            opacity: 0.9;
-            font-weight: 500;
+            opacity: .9;
+            font-weight: 500
         }
 
-        /* Main Content */
         .main-content {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
             position: relative;
-            z-index: 1;
+            z-index: 1
         }
 
         .section {
             padding: 5rem 0;
             opacity: 0;
             transform: translateY(30px);
-            transition: all 0.8s ease;
+            transition: all .8s ease
         }
 
         .section.visible {
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(0)
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 4rem
         }
 
         .section-title {
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-size: clamp(3rem, 5vw, 4rem);
             font-weight: 900;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            line-height: 1.2;
+            line-height: 1
         }
 
         .section-subtitle {
-            font-size: 1.25rem;
+            font-size: 1rem;
             color: var(--gray-600);
             max-width: 700px;
             margin: 0 auto;
-            line-height: 1.7;
+            line-height: 2
         }
 
-        /* Enhanced Cards */
         .cards-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2.5rem;
-            margin-bottom: 4rem;
+            gap: 3rem;
+            margin-bottom: 4rem
         }
 
         .card {
-            background: white;
+            background: #fff;
             border-radius: 24px;
             padding: 3rem;
             box-shadow: var(--shadow-md);
-            transition: all 0.4s ease;
+            transition: all .4s ease;
             border: 1px solid var(--gray-100);
             position: relative;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .card::before {
@@ -436,17 +456,17 @@
             height: 4px;
             background: var(--gradient-primary);
             transform: scaleX(0);
-            transition: transform 0.4s ease;
+            transition: transform .4s ease
         }
 
         .card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-2xl);
-            border-color: var(--primary-light);
+            border-color: var(--primary-light)
         }
 
         .card:hover::before {
-            transform: scaleX(1);
+            transform: scaleX(1)
         }
 
         .card-icon {
@@ -460,7 +480,7 @@
             margin-bottom: 2rem;
             font-size: 2rem;
             position: relative;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .card-icon::after {
@@ -470,38 +490,38 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.6s ease;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .3), transparent);
+            transition: left .6s ease
         }
 
         .card:hover .card-icon::after {
-            left: 100%;
+            left: 100%
         }
 
         .card h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: var(--gray-900);
+            margin-bottom: 2rem;
+            color: var(--gray-900)
         }
 
         .card p {
             color: var(--gray-600);
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
+            line-height: 2;
+            margin-bottom: 2rem
         }
 
         .card ul {
             list-style: none;
-            margin-top: 1.5rem;
+            margin-top: 2rem
         }
 
         .card li {
             color: var(--gray-600);
-            margin-bottom: 0.75rem;
+            margin-bottom: .8rem;
             position: relative;
             padding-left: 2rem;
-            line-height: 1.6;
+            line-height: 2
         }
 
         .card li::before {
@@ -510,10 +530,9 @@
             left: 0;
             color: var(--accent);
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem
         }
 
-        /* Enhanced Architecture Diagram */
         .architecture {
             background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
             border-radius: 32px;
@@ -522,7 +541,7 @@
             margin: 4rem 0;
             border: 1px solid var(--gray-100);
             position: relative;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .architecture::before {
@@ -532,7 +551,7 @@
             left: 0;
             right: 0;
             height: 6px;
-            background: var(--gradient-primary);
+            background: var(--gradient-primary)
         }
 
         .architecture-title {
@@ -540,7 +559,7 @@
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 3rem;
-            color: var(--gray-900);
+            color: var(--gray-900)
         }
 
         .architecture-flow {
@@ -548,18 +567,18 @@
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
             align-items: center;
-            position: relative;
+            position: relative
         }
 
         .flow-step {
             text-align: center;
             padding: 2rem;
-            background: white;
+            background: #fff;
             border-radius: 20px;
             border: 2px solid var(--gray-200);
-            transition: all 0.4s ease;
+            transition: all .4s ease;
             position: relative;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .flow-step::before {
@@ -571,53 +590,52 @@
             bottom: 0;
             background: var(--gradient-primary);
             opacity: 0;
-            transition: opacity 0.4s ease;
+            transition: opacity .4s ease
         }
 
         .flow-step:hover {
             border-color: var(--primary);
             transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-lg)
         }
 
         .flow-step:hover::before {
-            opacity: 0.05;
+            opacity: .05
         }
 
         .flow-icon {
             font-size: 3rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
             position: relative;
-            z-index: 1;
+            z-index: 1
         }
 
         .flow-step h4 {
             font-weight: 600;
             margin-bottom: 1rem;
             color: var(--gray-900);
-            font-size: 1.1rem;
+            font-size: 1rem;
             position: relative;
-            z-index: 1;
+            z-index: 1
         }
 
         .flow-step p {
-            font-size: 0.9rem;
+            font-size: .9rem;
             color: var(--gray-600);
-            line-height: 1.6;
+            line-height: 2;
             position: relative;
-            z-index: 1;
+            z-index: 1
         }
 
-        /* Enhanced Impact Section */
         .impact {
             background: var(--gradient-accent);
-            color: white;
+            color: #fff;
             border-radius: 32px;
             padding: 4rem;
             margin: 4rem 0;
             text-align: center;
             position: relative;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .impact::before {
@@ -627,103 +645,99 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                radial-gradient(circle at 30% 20%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 70% 80%, rgba(255,255,255,0.08) 0%, transparent 50%);
+            background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, .1) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 8%) 0%, transparent 50%)
         }
 
         .impact-content {
             position: relative;
-            z-index: 1;
+            z-index: 1
         }
 
         .impact h3 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 900;
-            margin-bottom: 3rem;
+            margin-bottom: 3rem
         }
 
         .impact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
+            gap: 2rem
         }
 
         .impact-stat {
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            background: rgba(255, 255, 255, .1);
             border-radius: 16px;
             backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
+            transition: all .3s ease
         }
 
         .impact-stat:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, .2)
         }
 
         .impact-stat-value {
             display: block;
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 900;
-            margin-bottom: 0.5rem;
+            margin-bottom: .5rem
         }
 
         .impact-stat-label {
             font-size: 1rem;
-            opacity: 0.9;
+            opacity: .9
         }
 
-        /* Enhanced Tech Stack */
         .tech-stack {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-            gap: 1.5rem;
-            margin-top: 3rem;
+            gap: 2rem;
+            margin-top: 3rem
         }
 
         .tech-badge {
             background: var(--gray-100);
             color: var(--gray-700);
-            padding: 1rem 1.5rem;
+            padding: 1rem 2rem;
             border-radius: 50px;
             text-align: center;
             font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            font-size: .9rem;
+            transition: all .3s ease;
+            border: 2px solid transparent
         }
 
         .tech-badge:hover {
             background: var(--primary);
-            color: white;
+            color: #fff;
             transform: translateY(-3px);
             box-shadow: var(--shadow-lg);
-            border-color: var(--primary-dark);
+            border-color: var(--primary-dark)
         }
 
-        /* Enhanced Project Links */
         .project-links {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: 3rem
         }
 
         .project-link {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
-            background: white;
+            gap: 2rem;
+            background: #fff;
             padding: 2rem;
             border-radius: 20px;
             text-decoration: none;
             color: var(--gray-900);
             box-shadow: var(--shadow-md);
-            transition: all 0.4s ease;
+            transition: all .4s ease;
             border: 1px solid var(--gray-100);
             position: relative;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .project-link::before {
@@ -733,18 +747,18 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 0.05), transparent);
-            transition: left 0.6s ease;
+            background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 5%), transparent);
+            transition: left .6s ease
         }
 
         .project-link:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-2xl);
-            border-color: var(--primary);
+            border-color: var(--primary)
         }
 
         .project-link:hover::before {
-            left: 100%;
+            left: 100%
         }
 
         .link-icon {
@@ -755,32 +769,31 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-            flex-shrink: 0;
+            color: #fff;
+            font-size: 2rem;
+            flex-shrink: 0
         }
 
         .link-content h4 {
             font-weight: 600;
-            margin-bottom: 0.5rem;
-            font-size: 1.1rem;
+            margin-bottom: .5rem;
+            font-size: 1rem
         }
 
         .link-content p {
             color: var(--gray-600);
-            font-size: 0.9rem;
-            line-height: 1.5;
+            font-size: .9rem;
+            line-height: 2
         }
 
-        /* Enhanced Footer */
         .portfolio-footer {
             background: var(--gradient-primary);
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 4rem 2rem;
             margin-top: 6rem;
             position: relative;
-            overflow: hidden;
+            overflow: hidden
         }
 
         .portfolio-footer::before {
@@ -790,128 +803,123 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(255,255,255,0.08) 0%, transparent 40%);
+            background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, .1) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 8%) 0%, transparent 40%)
         }
 
         .footer-content {
             position: relative;
             z-index: 1;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto
         }
 
         .footer-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            margin-bottom: 1rem
         }
 
         .footer-content p {
             margin-bottom: 2rem;
-            opacity: 0.9;
-            line-height: 1.7;
+            opacity: .9;
+            line-height: 2
         }
 
         .footer-contact {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            padding: 0.75rem 1.5rem;
+            gap: .5rem;
+            background: rgba(255, 255, 255, .2);
+            color: #fff;
+            padding: .8rem 2rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 500;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
+            transition: all .3s ease;
+            backdrop-filter: blur(10px)
         }
 
         .footer-contact:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: translateY(-2px);
+            background: rgba(255, 255, 255, .3);
+            transform: translateY(-2px)
         }
 
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
+        @media(max-width:768px) {
             .nav-links {
-                display: none;
+                display: none
             }
-            
+
             .hero {
                 padding: 4rem 1rem 3rem;
-                min-height: 80vh;
+                min-height: 80vh
             }
-            
+
             .hero-metrics {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
+                gap: 2rem
             }
-            
+
             .main-content {
-                padding: 0 1rem;
+                padding: 0 1rem
             }
-            
+
             .cards-grid {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 2rem
             }
-            
+
             .architecture-flow {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr
             }
-            
+
             .tech-stack {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr)
             }
-            
+
             .project-links {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr
             }
-            
+
             .card {
-                padding: 2rem;
+                padding: 2rem
             }
-            
+
             .architecture {
-                padding: 2rem;
+                padding: 2rem
             }
-            
+
             .impact {
-                padding: 3rem 2rem;
+                padding: 3rem 2rem
             }
         }
 
-        @media (max-width: 480px) {
+        @media(max-width:480px) {
             .nav-container {
-                padding: 0 1rem;
+                padding: 0 1rem
             }
-            
+
             .hero-metrics {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr
             }
-            
+
             .section {
-                padding: 3rem 0;
+                padding: 3rem 0
             }
         }
     </style>
 </head>
+
 <body>
-    <!-- Background Animation -->
     <div class="bg-animation">
         <div class="floating-shape shape-1"></div>
         <div class="floating-shape shape-2"></div>
         <div class="floating-shape shape-3"></div>
     </div>
-
-    <!-- Enhanced Navigation -->
     <nav class="nav" id="navbar">
         <div class="nav-container">
             <div class="nav-brand-section">
                 <div class="nav-avatar">MT</div>
                 <div class="nav-info">
-                    <h3><a href="https://michaeltatum.xyz/" target="_blank" rel="noopener noreferrer" style="color: var(--gray-900); text-decoration: none;">A. Michael Tatum</a></h3>
+                    <h3><a href="https://michaeltatum.xyz/" target="_blank" rel="noopener noreferrer" style="color:var(--gray-900);text-decoration:none">A. Michael Tatum</a></h3>
                     <p>Full-Stack Developer & Systems Architect</p>
                 </div>
             </div>
@@ -924,58 +932,27 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Enhanced Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">
-                🏆 Production Service
-            </div>
+            <div class="hero-badge">🏆 Production Service</div>
             <h1>SiftDNS</h1>
             <h2 class="hero-subtitle">Privacy-First DNS Infrastructure</h2>
-            <p class="hero-description">
-                A production-ready DNS privacy service built from the ground up. Delivering enterprise-grade 
-                ad blocking and privacy protection through custom filtering infrastructure, serving real customers 
-                with 99.9% uptime, 430K+ domains blocked (and growing), and zero-logging guarantee.
-            </p>
-            <p class="hero-author">Designed & Built by <a href="https://michaeltatum.xyz/" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.5);">A. Michael Tatum</a></p>
-            
-            <a href="https://siftdns.com" target="_blank" rel="noopener noreferrer" class="hero-cta">
-                🌐 View Live Service
-            </a>
-            
+            <p class="hero-description">A production-ready DNS privacy service built from the ground up. Delivering enterprise-grade ad blocking and privacy protection through custom filtering infrastructure, serving real customers with 99.9% uptime, 430K+ domains blocked (and growing), and zero-logging guarantee.</p>
+            <p class="hero-author">Designed & Built by <a href="https://michaeltatum.xyz/" target="_blank" rel="noopener noreferrer" style="color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5)">A. Michael Tatum</a></p><a href="https://siftdns.com" target="_blank" rel="noopener noreferrer" class="hero-cta">🌐 View Live Service</a>
             <div class="hero-metrics">
-                <div class="metric">
-                    <span class="metric-value">430K+</span>
-                    <span class="metric-label">Domains Blocked (and growing)</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">$3/mo</span>
-                    <span class="metric-label">Sustainable Revenue</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">99.9%</span>
-                    <span class="metric-label">Uptime Achieved</span>
-                </div>
-                <div class="metric">
-                    <span class="metric-value">100%</span>
-                    <span class="metric-label">Customer Satisfaction</span>
-                </div>
+                <div class="metric"><span class="metric-value">430K+</span> <span class="metric-label">Domains Blocked (and growing)</span></div>
+                <div class="metric"><span class="metric-value">$3/mo</span> <span class="metric-label">Sustainable Revenue</span></div>
+                <div class="metric"><span class="metric-value">99.9%</span> <span class="metric-label">Uptime Achieved</span></div>
+                <div class="metric"><span class="metric-value">100%</span> <span class="metric-label">Customer Satisfaction</span></div>
             </div>
         </div>
     </section>
-
     <div class="main-content">
-        <!-- Project Overview -->
         <section class="section" id="overview">
             <div class="section-header">
                 <h2 class="section-title">Project Overview</h2>
-                <p class="section-subtitle">
-                    A comprehensive solution addressing internet privacy, ad blocking, and DNS performance 
-                    through innovative infrastructure design and sustainable business model execution.
-                </p>
+                <p class="section-subtitle">A comprehensive solution addressing internet privacy, ad blocking, and DNS performance through innovative infrastructure design and sustainable business model execution.</p>
             </div>
-
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">🎯</div>
@@ -989,7 +966,6 @@
                         <li>Privacy concerns with free DNS services</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">💡</div>
                     <h3>Technical Innovation</h3>
@@ -1002,7 +978,6 @@
                         <li>Recursive caching for optimal performance</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">📈</div>
                     <h3>Business Success</h3>
@@ -1016,7 +991,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">🔧</div>
@@ -1030,7 +1004,6 @@
                         <li>User-centered interface design</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">⚡</div>
                     <h3>Performance Results</h3>
@@ -1043,7 +1016,6 @@
                         <li>Zero customer complaints about service quality</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">🛡️</div>
                     <h3>Privacy & Security</h3>
@@ -1058,17 +1030,11 @@
                 </div>
             </div>
         </section>
-
-        <!-- System Architecture -->
         <section class="section" id="architecture">
             <div class="section-header">
                 <h2 class="section-title">System Architecture</h2>
-                <p class="section-subtitle">
-                    Designed for high availability, performance, and privacy with automatic scaling, 
-                    intelligent failover, and comprehensive monitoring capabilities.
-                </p>
+                <p class="section-subtitle">Designed for high availability, performance, and privacy with automatic scaling, intelligent failover, and comprehensive monitoring capabilities.</p>
             </div>
-
             <div class="architecture">
                 <h3 class="architecture-title">DNS Request Processing Flow</h3>
                 <div class="architecture-flow">
@@ -1093,8 +1059,8 @@
                         <p>Direct queries to authoritative root servers ensuring privacy and eliminating third-party dependencies.</p>
                     </div>
                 </div>
+                <img src="/static/images/network-diagram.png" alt="SiftDNS Network Architecture Diagram" style="width:100%;max-width:1000px;margin:3rem auto 0;display:block;border-radius:24px;box-shadow:var(--shadow-xl)">
             </div>
-
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">🏗️</div>
@@ -1108,7 +1074,6 @@
                         <li>Real-time health monitoring and alerting</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">🔄</div>
                     <h3>Operational Excellence</h3>
@@ -1123,17 +1088,11 @@
                 </div>
             </div>
         </section>
-
-        <!-- Technology Stack -->
         <section class="section" id="technology">
             <div class="section-header">
                 <h2 class="section-title">Technology Stack</h2>
-                <p class="section-subtitle">
-                    Modern cloud infrastructure with automation, monitoring, and security best practices 
-                    throughout the entire technology stack.
-                </p>
+                <p class="section-subtitle">Modern cloud infrastructure with automation, monitoring, and security best practices throughout the entire technology stack.</p>
             </div>
-
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">🏗️</div>
@@ -1147,7 +1106,6 @@
                         <li>Infrastructure as code practices</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">🔒</div>
                     <h3>Security & Privacy</h3>
@@ -1160,7 +1118,6 @@
                         <li>Secure protocols and encrypted connections</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">💳</div>
                     <h3>Business & Integration</h3>
@@ -1174,7 +1131,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="tech-stack">
                 <div class="tech-badge">DNS Filtering</div>
                 <div class="tech-badge">DigitalOcean</div>
@@ -1190,61 +1146,39 @@
                 <div class="tech-badge">JavaScript</div>
             </div>
         </section>
-
-        <!-- Impact & Results -->
         <section class="section" id="impact">
             <div class="section-header">
                 <h2 class="section-title">Results & Impact</h2>
-                <p class="section-subtitle">
-                    Measurable improvements in user experience, performance metrics, and business outcomes 
-                    with documented customer success stories.
-                </p>
+                <p class="section-subtitle">Measurable improvements in user experience, performance metrics, and business outcomes with documented customer success stories.</p>
             </div>
-
             <div class="impact">
                 <div class="impact-content">
                     <h3>Key Performance Metrics</h3>
                     <div class="impact-grid">
-                        <div class="impact-stat">
-                            <span class="impact-stat-value">&lt;50ms</span>
-                            <span class="impact-stat-label">Average Response Time</span>
-                        </div>
-                        <div class="impact-stat">
-                            <span class="impact-stat-value">66%</span>
-                            <span class="impact-stat-label">Latency Reduction</span>
-                        </div>
-                        <div class="impact-stat">
-                            <span class="impact-stat-value">430K+</span>
-                            <span class="impact-stat-label">Blocked Domains (and growing)</span>
-                        </div>
-                        <div class="impact-stat">
-                            <span class="impact-stat-value">99.9%</span>
-                            <span class="impact-stat-label">Uptime Achieved</span>
-                        </div>
+                        <div class="impact-stat"><span class="impact-stat-value">&lt;50ms</span> <span class="impact-stat-label">Average Response Time</span></div>
+                        <div class="impact-stat"><span class="impact-stat-value">66%</span> <span class="impact-stat-label">Latency Reduction</span></div>
+                        <div class="impact-stat"><span class="impact-stat-value">430K+</span> <span class="impact-stat-label">Blocked Domains (and growing)</span></div>
+                        <div class="impact-stat"><span class="impact-stat-value">99.9%</span> <span class="impact-stat-label">Uptime Achieved</span></div>
                     </div>
                 </div>
             </div>
-
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">🎮</div>
                     <h3>Gaming Performance</h3>
                     <p><strong>"Latency reduced from 27ms to 9ms"</strong> - Customer reported 66% improvement in gaming performance through optimized DNS resolution and reduced ISP throttling.</p>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">🚫</div>
                     <h3>Ad Blocking Effectiveness</h3>
                     <p><strong>"No ads at all on Google searches or major news sites"</strong> - Complete ad blocking across platforms without browser extensions or software installations.</p>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">🌟</div>
                     <h3>User Experience</h3>
                     <p><strong>"Like the old internet where content had focus"</strong> - Users report significantly improved browsing experience with faster page loads and cleaner interfaces.</p>
                 </div>
             </div>
-
             <div class="cards-grid">
                 <div class="card">
                     <div class="card-icon">💰</div>
@@ -1257,7 +1191,6 @@
                         <li>Organic growth through word-of-mouth</li>
                     </ul>
                 </div>
-
                 <div class="card">
                     <div class="card-icon">🔧</div>
                     <h3>Technical Excellence</h3>
@@ -1271,213 +1204,131 @@
                 </div>
             </div>
         </section>
-
-        <!-- Project Resources -->
         <section class="section" id="links">
             <div class="section-header">
                 <h2 class="section-title">Project Resources</h2>
-                <p class="section-subtitle">
-                    Explore the live service, comprehensive documentation, customer testimonials, 
-                    and technical implementation details.
-                </p>
+                <p class="section-subtitle">Explore the live service, comprehensive documentation, customer testimonials, and technical implementation details.</p>
             </div>
-
-            <div class="project-links">
-                <a href="https://siftdns.com" class="project-link" target="_blank" rel="noopener noreferrer">
+            <div class="project-links"><a href="https://siftdns.com" class="project-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon">🌐</div>
                     <div class="link-content">
                         <h4>Live Production Service</h4>
                         <p>Visit the production SiftDNS website and explore the full service offering</p>
                     </div>
-                </a>
-
-                <a href="https://siftdns.com/setup" class="project-link" target="_blank" rel="noopener noreferrer">
+                </a><a href="https://siftdns.com/setup" class="project-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon">📖</div>
                     <div class="link-content">
                         <h4>Technical Documentation</h4>
                         <p>Comprehensive setup guides and technical documentation for all platforms</p>
                     </div>
-                </a>
-
-                <a href="https://siftdns.com/testimonials" class="project-link" target="_blank" rel="noopener noreferrer">
+                </a><a href="https://siftdns.com/testimonials" class="project-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon">💬</div>
                     <div class="link-content">
                         <h4>Customer Success Stories</h4>
                         <p>Real user testimonials and documented performance improvements</p>
                     </div>
-                </a>
-
-                <a href="https://stats.uptimerobot.com/6szE9Aycaz" class="project-link" target="_blank" rel="noopener noreferrer">
+                </a><a href="https://stats.uptimerobot.com/6szE9Aycaz" class="project-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon">📊</div>
                     <div class="link-content">
                         <h4>Live System Monitoring</h4>
                         <p>Real-time uptime monitoring, performance metrics, and service status</p>
                     </div>
-                </a>
-
-                <a href="mailto:support@siftdns.com" class="project-link">
+                </a><a href="mailto:support@siftdns.com" class="project-link">
                     <div class="link-icon">✉️</div>
                     <div class="link-content">
                         <h4>Contact A. Michael Tatum</h4>
                         <p>Discuss this project, technical implementation, or collaboration opportunities</p>
                     </div>
-                </a>
-
-                <a href="https://siftdns.com/privacy" class="project-link" target="_blank" rel="noopener noreferrer">
+                </a><a href="https://siftdns.com/privacy" class="project-link" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon">🔒</div>
                     <div class="link-content">
                         <h4>Privacy & Security Details</h4>
                         <p>Comprehensive privacy policy and security architecture documentation</p>
                     </div>
-                </a>
-            </div>
+                </a></div>
         </section>
     </div>
-
-    <!-- Enhanced Footer -->
     <footer class="portfolio-footer">
         <div class="footer-content">
             <h3>Ready to discuss this project?</h3>
-            <p>I'm passionate about building scalable, user-focused solutions that solve real problems. 
-            Let's talk about how I can bring this same level of technical excellence and business acumen to your next project.</p>
-            <a href="mailto:support@siftdns.com" class="footer-contact">
-                📧 Get in touch with A. Michael Tatum
-            </a>
+            <p>I'm passionate about building scalable, user-focused solutions that solve real problems. Let's talk about how I can bring this same level of technical excellence and business acumen to your next project.</p><a href="mailto:support@siftdns.com" class="footer-contact">📧 Get in touch with A. Michael Tatum</a>
         </div>
     </footer>
-
     <script>
-        // Enhanced scroll effects and navigation
-        document.addEventListener('DOMContentLoaded', function() {
-            const nav = document.getElementById('navbar');
-            const sections = document.querySelectorAll('.section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-
-            // Smooth scrolling for navigation links
-            navLinks.forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
+        document.addEventListener("DOMContentLoaded", function() {
+            const t = document.getElementById("navbar"),
+                n = document.querySelectorAll(".section"),
+                s = document.querySelectorAll(".nav-links a");
+            s.forEach(e => {
+                e.addEventListener("click", function(e) {
                     e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
+                    const t = document.querySelector(this.getAttribute("href"));
+                    t && t.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    })
+                })
             });
 
-            // Enhanced scroll effects
-            function handleScroll() {
-                const scrolled = window.pageYOffset;
-                
-                // Navbar scroll effect
-                if (scrolled > 100) {
-                    nav.classList.add('scrolled');
-                } else {
-                    nav.classList.remove('scrolled');
-                }
-
-                // Update active navigation link
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 150;
-                    const sectionHeight = section.clientHeight;
-                    if (scrolled >= sectionTop && scrolled < sectionTop + sectionHeight) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + current) {
-                        link.classList.add('active');
-                    }
-                });
-
-                // Animate sections on scroll
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    const viewportHeight = window.innerHeight;
-                    
-                    if (scrolled + viewportHeight > sectionTop + 100) {
-                        section.classList.add('visible');
-                    }
-                });
+            function o() {
+                const e = window.pageYOffset;
+                e > 100 ? t.classList.add("scrolled") : t.classList.remove("scrolled");
+                let o = "";
+                n.forEach(t => {
+                    const n = t.offsetTop - 200,
+                        s = t.clientHeight;
+                    e >= n && e < n + s && (o = t.getAttribute("id"))
+                }), s.forEach(e => {
+                    e.classList.remove("active"), e.getAttribute("href") === "#" + o && e.classList.add("active")
+                }), n.forEach(t => {
+                    const n = t.offsetTop,
+                        o = t.clientHeight,
+                        s = window.innerHeight;
+                    e + s > n + 100 && t.classList.add("visible")
+                })
             }
+            let e = !1;
 
-            // Throttled scroll handler
-            let ticking = false;
-            function requestTick() {
-                if (!ticking) {
-                    requestAnimationFrame(handleScroll);
-                    ticking = true;
-                    setTimeout(() => { ticking = false; }, 10);
-                }
+            function i() {
+                e || (requestAnimationFrame(o), e = !0, setTimeout(() => {
+                    e = !1
+                }, 10))
             }
-
-            window.addEventListener('scroll', requestTick);
-            
-            // Initial call
-            handleScroll();
-
-            // Intersection Observer for enhanced animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry, index) => {
-                    if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            entry.target.style.opacity = '1';
-                            entry.target.style.transform = 'translateY(0)';
-                        }, index * 100);
-                    }
-                });
-            }, observerOptions);
-
-            // Observe cards and elements for staggered animations
-            document.querySelectorAll('.card, .flow-step, .metric, .tech-badge').forEach((el, index) => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(30px)';
-                el.style.transition = `all 0.6s ease ${index * 0.05}s`;
-                observer.observe(el);
-            });
-
-            // Enhanced hover effects for project links
-            document.querySelectorAll('.project-link').forEach(link => {
-                link.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-8px) scale(1.02)';
-                });
-                
-                link.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-
-            // Parallax effect for floating shapes
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                const shapes = document.querySelectorAll('.floating-shape');
-                
-                shapes.forEach((shape, index) => {
-                    const speed = (index + 1) * 0.5;
-                    shape.style.transform = `translateY(${scrolled * speed}px)`;
-                });
-            });
-        });
-
-        // Performance monitoring
-        window.addEventListener('load', () => {
-            // Log performance metrics for optimization
-            if ('performance' in window) {
-                const perfData = performance.getEntriesByType('navigation')[0];
-                console.log('Page load time:', Math.round(perfData.loadEventEnd - perfData.fetchStart), 'ms');
+            window.addEventListener("scroll", i), o();
+            const a = {
+                    threshold: .1,
+                    rootMargin: "0px 0px -50px 0px"
+                },
+                r = new IntersectionObserver(e => {
+                    e.forEach((e, t) => {
+                        e.isIntersecting && setTimeout(() => {
+                            e.target.style.opacity = "1", e.target.style.transform = "translateY(0)"
+                        }, t * 100)
+                    })
+                }, a);
+            document.querySelectorAll(".card, .flow-step, .metric, .tech-badge").forEach((e, t) => {
+                e.style.opacity = "0", e.style.transform = "translateY(30px)", e.style.transition = `all 0.6s ease ${t*.05}s`, r.observe(e)
+            }), document.querySelectorAll(".project-link").forEach(e => {
+                e.addEventListener("mouseenter", function() {
+                    this.style.transform = "translateY(-8px) scale(1.02)"
+                }), e.addEventListener("mouseleave", function() {
+                    this.style.transform = "translateY(0) scale(1)"
+                })
+            }), window.addEventListener("scroll", () => {
+                const e = window.pageYOffset,
+                    t = document.querySelectorAll(".floating-shape");
+                t.forEach((t, n) => {
+                    const s = (n + 1) * .5;
+                    t.style.transform = `translateY(${e*s}px)`
+                })
+            })
+        }), window.addEventListener("load", () => {
+            if ("performance" in window) {
+                const e = performance.getEntriesByType("navigation")[0];
+                console.log("Page load time:", Math.round(e.loadEventEnd - e.fetchStart), "ms")
             }
-        });
+        })
     </script>
 </body>
+
 </html>
