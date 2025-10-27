@@ -1,0 +1,15 @@
+User-agent: *
+
+# Disallow common sensitive files and directories
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.env.production
+
+# Allow all other content
+Allow: /
+
+Sitemap: https://michaeltatum.xyz/sitemap.xml
