@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#1a1a1a">
-    <title>SiftDNS - DNS Privacy Service | A. Michael Tatum Portfolio</title>
-    <meta name="description" content="A production-ready DNS privacy service built from the ground up. Delivering enterprise-grade ad blocking and privacy protection through custom filtering infrastructure.">
+    <title>SiftDNS - Project Sunset | A. Michael Tatum Portfolio</title>
+    <meta name="description" content="Archived: A production-ready DNS privacy service built from the ground up. Delivered enterprise-grade ad blocking and privacy protection.">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -57,7 +57,7 @@
         .hero-logo-container.combined-logo {
             position: relative;
             width: 100%;
-            max-width: 450px; /* Large Size matched to text block */
+            max-width: 450px; 
             aspect-ratio: 1/1;
             display: flex;
             justify-content: center;
@@ -128,6 +128,8 @@
             display: flex;
             align-items: center;
             border-bottom: 1px solid var(--border-color);
+            /* SUNSET MODE: Desaturate hero slightly to indicate archived status */
+            filter: grayscale(0.2);
         }
 
         @keyframes gradientShift { 0% { background-position: 0 } 50% { background-position: 100% } 100% { background-position: 0 } }
@@ -159,14 +161,16 @@
         .hero-subtitle { font-size: 2rem; margin-bottom: 1rem; opacity: 1; font-weight: 600; color: var(--primary-light); }
         .hero-description { font-size: 1rem; margin-bottom: 3rem; opacity: .9; max-width: 800px; line-height: 2; color: var(--text-muted); }
         .hero-author { font-size: 1rem; margin-bottom: 3rem; opacity: .8; font-weight: 500; color: var(--text-muted); }
-        .hero-cta { display: inline-flex; align-items: center; gap: .5rem; background: var(--accent); color: var(--text-on-accent); padding: 1rem 2rem; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all .3s ease; box-shadow: var(--shadow-lg); margin-bottom: 3rem }
-        .hero-cta:hover { transform: translateY(-2px); background: var(--accent-hover); box-shadow: var(--shadow-xl) }
+        
+        /* UPDATED CTA for Archived Status */
+        .hero-cta { display: inline-flex; align-items: center; gap: .5rem; background: var(--bg-card); color: var(--text-muted); padding: 1rem 2rem; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all .3s ease; box-shadow: none; border: 1px solid var(--border-color); margin-bottom: 3rem; cursor: not-allowed; opacity: 0.8; }
+        .hero-cta:hover { transform: none; background: var(--bg-card); box-shadow: none; }
 
-        /* UPDATED METRICS GRID: Flexbox + Center Justify */
+        /* UPDATED METRICS GRID */
         .hero-metrics {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Centers the items */
+            justify-content: center;
             gap: 2rem;
             margin-top: 3rem;
         }
@@ -182,17 +186,16 @@
         .section-title { font-size: clamp(3rem, 5vw, 4rem); font-weight: 900; margin-bottom: 2rem; background: none; -webkit-text-fill-color: initial; color: var(--primary); line-height: 1 }
         .section-subtitle { font-size: 1rem; color: var(--text-muted); max-width: 700px; margin: 0 auto; line-height: 2 }
 
-        /* UPDATED CARDS GRID: Flexbox + Center Justify */
         .cards-grid {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center; /* Ensures centered rows */
+            justify-content: center;
             gap: 2rem;
             margin-bottom: 4rem;
         }
         .card {
             background: var(--bg-card); border-radius: 24px; padding: 3rem; box-shadow: var(--shadow-md); transition: all .4s ease; border: 1px solid var(--border-color); position: relative; overflow: hidden;
-            flex: 0 1 350px; /* Basis of 350px, allows shrinking but prefers 350px */
+            flex: 0 1 350px;
         }
         .card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--primary); transform: scaleX(0); transition: transform .4s ease }
         .card:hover { transform: translateY(-10px); box-shadow: var(--shadow-xl); border-color: var(--primary) }
@@ -233,23 +236,8 @@
         .tech-stack { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 2rem; margin-top: 3rem }
         .tech-badge { background: var(--bg-header); color: var(--text-muted); padding: 1rem 2rem; border-radius: 50px; text-align: center; font-weight: 600; font-size: .9rem; transition: all .3s ease; border: 2px solid var(--border-color); }
         .tech-badge:hover { background: var(--primary); color: white; transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--primary) }
-
-        .project-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 3rem }
-        .project-link { display: flex; align-items: center; gap: 2rem; background: var(--bg-card); padding: 2rem; border-radius: 20px; text-decoration: none; color: var(--text-main); box-shadow: var(--shadow-md); transition: all .4s ease; border: 1px solid var(--border-color); position: relative; overflow: hidden }
-        .project-link::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(70, 109, 135, 0.2), transparent); transition: left .6s ease }
-        .project-link:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: var(--primary) }
-        .project-link:hover::before { left: 100% }
-        .link-icon { width: 56px; height: 56px; border-radius: 16px; background: var(--gradient-primary); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 2rem; flex-shrink: 0 }
-        .link-content h4 { font-weight: 600; margin-bottom: .5rem; font-size: 1rem }
-        .link-content p { color: var(--text-muted); font-size: .9rem; line-height: 2 }
-
-        .portfolio-footer { background: var(--bg-header); color: var(--text-muted); text-align: center; padding: 4rem 2rem; margin-top: 6rem; position: relative; overflow: hidden; border-top: 1px solid var(--border-color); }
-        .portfolio-footer::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(70, 109, 135, 0.1) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(70, 109, 135, 0.08) 0%, transparent 40%) }
-        .footer-content { position: relative; z-index: 1; max-width: 600px; margin: 0 auto }
-        .footer-content h3 { font-size: 2rem; margin-bottom: 1rem; color: var(--primary); }
-        .footer-content p { margin-bottom: 2rem; opacity: .9; line-height: 2 }
-        .footer-contact { display: inline-flex; align-items: center; gap: .5rem; background: var(--accent); color: var(--text-on-accent); padding: .8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 500; transition: all .3s ease; backdrop-filter: blur(10px) }
-        .footer-contact:hover { background: var(--accent-hover); transform: translateY(-2px) }
+        
+        /* RESOURCES SECTION REMOVED */
 
         @media(max-width:900px) {
             .nav-links { display: none }
@@ -291,8 +279,7 @@
                 <li><a href="#architecture">Architecture</a></li>
                 <li><a href="#technology">Technology</a></li>
                 <li><a href="#impact">Impact</a></li>
-                <li><a href="#links">Resources</a></li>
-            </ul>
+                </ul>
         </div>
     </nav>
     <section class="hero">
@@ -321,15 +308,16 @@
             </div>
 
             <div class="hero-text">
-                <div class="hero-badge">🏆 Production Service</div>
+                <div class="hero-badge" style="border-color: #D4A373; color: #D4A373; background: rgba(212, 163, 115, 0.1);">🏁 Project Sunset (2026)</div>
                 <h1>SiftDNS</h1>
                 <h2 class="hero-subtitle">Privacy-First DNS Infrastructure</h2>
-                <p class="hero-description">A production-ready DNS privacy service built from the ground up. Delivering enterprise-grade ad blocking and privacy protection through custom filtering infrastructure, serving real customers with 99.9% uptime, 630K+ domains blocked (and growing), and zero-logging guarantee.</p>
-                <p class="hero-author">Designed & Built by <a href="https://michaeltatum.xyz/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:underline;text-decoration-color:var(--accent)">A. Michael Tatum</a></p><a href="https://siftdns.com" target="_blank" rel="noopener noreferrer" class="hero-cta">🌐 View Live Service</a>
+                <p class="hero-description">A production-ready DNS privacy service that was built from the ground up. Delivered enterprise-grade ad blocking and privacy protection through custom filtering infrastructure, having served real customers with 99.9% uptime and zero-logging guarantees.</p>
+                <p class="hero-author">Designed & Built by <a href="https://michaeltatum.xyz/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:underline;text-decoration-color:var(--accent)">A. Michael Tatum</a></p>
+                <a href="#" class="hero-cta">🔒 Service Archived</a>
                 <div class="hero-metrics">
-                    <div class="metric"><span class="metric-value">630K+</span> <span class="metric-label">Domains Blocked (and growing)</span></div>
-                    <div class="metric"><span class="metric-value">$3/mo</span> <span class="metric-label">Sustainable Revenue</span></div>
-                    <div class="metric"><span class="metric-value">99.9%</span> <span class="metric-label">Uptime Achieved</span></div>
+                    <div class="metric"><span class="metric-value">630K+</span> <span class="metric-label">Peak Domains Blocked</span></div>
+                    <div class="metric"><span class="metric-value">$3/mo</span> <span class="metric-label">Proven Revenue Model</span></div>
+                    <div class="metric"><span class="metric-value">99.9%</span> <span class="metric-label">Historical Uptime</span></div>
                     <div class="metric"><span class="metric-value">100%</span> <span class="metric-label">Customer Satisfaction</span></div>
                 </div>
             </div>
@@ -592,56 +580,9 @@
                 </div>
             </div>
         </section>
-        <section class="section" id="links">
-            <div class="section-header">
-                <h2 class="section-title">Project Resources</h2>
-                <p class="section-subtitle">Explore the live service, comprehensive documentation, customer testimonials, and technical implementation details.</p>
-            </div>
-            <div class="project-links"><a href="https://siftdns.com" class="project-link" target="_blank" rel="noopener noreferrer">
-                    <div class="link-icon">🌐</div>
-                    <div class="link-content">
-                        <h4>Live Production Service</h4>
-                        <p>Visit the production SiftDNS website and explore the full service offering</p>
-                    </div>
-                </a><a href="https://siftdns.com/about" class="project-link" target="_blank" rel="noopener noreferrer">
-                    <div class="link-icon">📖</div>
-                    <div class="link-content">
-                        <h4>Technical Documentation</h4>
-                        <p>Comprehensive setup guides and technical documentation for all platforms</p>
-                    </div>
-                </a><a href="https://siftdns.com/testimonials" class="project-link" target="_blank" rel="noopener noreferrer">
-                    <div class="link-icon">💬</div>
-                    <div class="link-content">
-                        <h4>Customer Success Stories</h4>
-                        <p>Real user testimonials and documented performance improvements</p>
-                    </div>
-                </a><a href="https://stats.uptimerobot.com/6szE9Aycaz" class="project-link" target="_blank" rel="noopener noreferrer">
-                    <div class="link-icon">📊</div>
-                    <div class="link-content">
-                        <h4>Live System Monitoring</h4>
-                        <p>Real-time uptime monitoring, performance metrics, and service status</p>
-                    </div>
-                </a><a href="mailto:support@siftdns.com" class="project-link">
-                    <div class="link-icon">✉️</div>
-                    <div class="link-content">
-                        <h4>Contact A. Michael Tatum</h4>
-                        <p>Discuss this project, technical implementation, or collaboration opportunities</p>
-                    </div>
-                </a><a href="https://siftdns.com/privacy" class="project-link" target="_blank" rel="noopener noreferrer">
-                    <div class="link-icon">🔒</div>
-                    <div class="link-content">
-                        <h4>Privacy & Security Details</h4>
-                        <p>Comprehensive privacy policy and security architecture documentation</p>
-                    </div>
-                </a></div>
-        </section>
-    </div>
-    <footer class="portfolio-footer">
-        <div class="footer-content">
-            <h3>Ready to discuss this project?</h3>
-            <p>I'm passionate about building scalable, user-focused solutions that solve real problems. Let's talk about how I can bring this same level of technical excellence and business acumen to your next project.</p><a href="mailto:support@siftdns.com" class="footer-contact">📧 Get in touch with A. Michael Tatum</a>
+        
         </div>
-    </footer>
+    
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const t = document.getElementById("navbar"),
