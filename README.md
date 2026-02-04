@@ -18,19 +18,6 @@ This project serves as a centralized professional hub, showcasing technical expe
 * **Automation:** GitHub Actions for continuous integration and deployment.
 * **Security:** Standard security headers, `robots.txt`, and `.nojekyll` for GitHub Pages optimization.
 
-## 📂 Project Structure
-
-```text
-├── .github/workflows/  # CI/CD deployment scripts
-├── assets/             # Images, PDFs, and static media
-├── scripts/            # Shell scripts for automation and maintenance
-├── siftdns/            # Project-specific sub-directory for SiftDNS integration
-├── index.html          # Main entry point / Digital CV
-├── CNAME               # Custom domain configuration
-└── robots.txt          # SEO and crawler instructions
-
-```
-
 ---
 
-*Maintained by Michael Tatum — Cloud Linux Engineer*
+*Maintained by A. Michael Tatum — Cloud Linux Engineer*

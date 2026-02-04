@@ -39,7 +39,7 @@
         "https://github.com/amaad-michael/",
         "https://siftdns.com"
       ],
-      "description": "Cloud Linux Engineer with 15+ years of experience specializing in high-availability infrastructure and DNS automation."
+      "description": "Cloud Linux Engineer with 15+ years of experience specializing in high-availability infrastructure and automation."
     }
     </script>
 
@@ -234,6 +234,20 @@
             transform: translateY(-2px);
             background: var(--accent-hover);
             box-shadow: 0 6px 20px rgba(212, 163, 115, 0.3);
+        }
+
+        /* Outline Button Style (Added for visual hierarchy) */
+        .cta-btn.outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--text-main);
+            box-shadow: none;
+        }
+
+        .cta-btn.outline:hover {
+            background: var(--accent);
+            color: var(--text-on-accent);
+            transform: translateY(-2px);
         }
 
         /* Main Content */
@@ -623,8 +637,12 @@
             </div>
             
             <div class="cta-row">
-                <a class="cta-btn" href="assets/documents/Michael_Tatum_VisualCV_Resume.pdf" rel="noopener noreferrer" target="_blank">
-                    <span aria-hidden="true">⬇️</span> Download Resume <span style="font-size:0.8em; opacity:0.8; margin-left:5px;"></span>
+                <a class="cta-btn" href="https://michaeltatum.xyz/projects">
+                    <span aria-hidden="true">🚀</span> View Projects
+                </a>
+
+                <a class="cta-btn outline" href="assets/documents/Michael_Tatum_VisualCV_Resume.pdf" rel="noopener noreferrer" target="_blank">
+                    <span aria-hidden="true">⬇️</span> Resume
                 </a>
             </div>
         </div>
