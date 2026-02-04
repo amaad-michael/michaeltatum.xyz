@@ -53,7 +53,7 @@
             overflow-x: hidden
         }
 
-        /* --- LOGO ANIMATION --- */
+        /* --- NEW LOGO ANIMATION CSS --- */
         .hero-logo-container.combined-logo {
             position: relative;
             width: 100%;
@@ -88,6 +88,7 @@
         .logo-ring.ring-1 { animation: activePulse 3s infinite linear 3.2s; }
         .logo-ring.ring-2 { animation: activePulse 3s infinite linear 4.7s; }
         @keyframes activePulse { 0% { width: 80%; height: 80%; opacity: 0.6; border-width: 2px; } 100% { width: 160%; height: 160%; opacity: 0; border-width: 0px; } }
+        /* --- END LOGO CSS --- */
 
         .bg-animation { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden; background: var(--bg-main); }
         .floating-shape { position: absolute; border-radius: 50%; opacity: .03; animation: float 20s infinite ease-in-out }
@@ -127,6 +128,7 @@
             display: flex;
             align-items: center;
             border-bottom: 1px solid var(--border-color);
+            /* SUNSET MODE: Desaturate hero slightly to indicate archived status */
             filter: grayscale(0.2);
         }
 
@@ -140,6 +142,7 @@
             position: relative;
             z-index: 1;
             animation: heroFadeIn 1s ease-out;
+            /* SIDE BY SIDE LAYOUT */
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -159,8 +162,11 @@
         .hero-description { font-size: 1rem; margin-bottom: 3rem; opacity: .9; max-width: 800px; line-height: 2; color: var(--text-muted); }
         .hero-author { font-size: 1rem; margin-bottom: 3rem; opacity: .8; font-weight: 500; color: var(--text-muted); }
         
+        /* UPDATED CTA for Archived Status */
         .hero-cta { display: inline-flex; align-items: center; gap: .5rem; background: var(--bg-card); color: var(--text-muted); padding: 1rem 2rem; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all .3s ease; box-shadow: none; border: 1px solid var(--border-color); margin-bottom: 3rem; cursor: not-allowed; opacity: 0.8; }
+        .hero-cta:hover { transform: none; background: var(--bg-card); box-shadow: none; }
 
+        /* UPDATED METRICS GRID */
         .hero-metrics {
             display: flex;
             flex-wrap: wrap;
@@ -231,11 +237,7 @@
         .tech-badge { background: var(--bg-header); color: var(--text-muted); padding: 1rem 2rem; border-radius: 50px; text-align: center; font-weight: 600; font-size: .9rem; transition: all .3s ease; border: 2px solid var(--border-color); }
         .tech-badge:hover { background: var(--primary); color: white; transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--primary) }
         
-        /* --- FOOTER & GITHUB --- */
-        .footer { padding: 4rem 0; border-top: 1px solid var(--border-color); text-align: center; background: rgba(26, 26, 26, 0.5); }
-        .github-cta { display: inline-flex; align-items: center; gap: 0.75rem; background: var(--bg-card); color: var(--text-main); padding: 1rem 2rem; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s ease; border: 1px solid var(--border-color); }
-        .github-cta:hover { transform: translateY(-3px); background: var(--primary-dark); border-color: var(--primary-light); box-shadow: var(--shadow-lg); }
-        .github-icon { width: 24px; height: 24px; fill: currentColor; }
+        /* RESOURCES SECTION REMOVED */
 
         @media(max-width:900px) {
             .nav-links { display: none }
@@ -247,6 +249,7 @@
             .main-content { padding: 0 1rem }
             .architecture-flow { grid-template-columns: 1fr }
             .tech-stack { grid-template-columns: repeat(2, 1fr) }
+            .project-links { grid-template-columns: 1fr }
             .card { padding: 2rem; flex: 1 1 100%; }
             .architecture { padding: 2rem }
             .impact { padding: 3rem 2rem }
@@ -281,6 +284,7 @@
     </nav>
     <section class="hero">
         <div class="hero-content">
+            
             <div class="hero-logo-wrapper">
                 <div class="hero-logo-container combined-logo">
                     <svg width="0" height="0" style="position: absolute; visibility: hidden;">
@@ -363,6 +367,44 @@
                     </ul>
                 </div>
             </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Development Approach</h3>
+                    <p>Full-stack development from infrastructure automation to customer experience, with emphasis on reliability, security, and user experience.</p>
+                    <ul>
+                        <li>Infrastructure as code with Ansible</li>
+                        <li>Automated deployment and configuration</li>
+                        <li>Comprehensive monitoring and alerting</li>
+                        <li>Security-first architecture design</li>
+                        <li>User-centered interface design</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Performance Results</h3>
+                    <p>Achieved significant performance improvements over traditional DNS services with measurable latency reductions and reliability metrics.</p>
+                    <ul>
+                        <li>66% latency reduction (27ms → 9ms gaming)</li>
+                        <li>Sub-50ms average response times</li>
+                        <li>99.9% uptime SLA achievement</li>
+                        <li>Complete ad blocking effectiveness</li>
+                        <li>Zero customer complaints about service quality</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Privacy & Security</h3>
+                    <p>Implemented true zero-logging architecture with end-to-end privacy protection and security best practices throughout the entire system.</p>
+                    <ul>
+                        <li>Zero DNS query logging policy</li>
+                        <li>Deep malware threat blocking</li>
+                        <li>DDoS protection and rate limiting</li>
+                        <li>Monthly infrastructure patching & hardening</li>
+                        <li>Privacy-by-design architecture</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section class="section" id="architecture">
             <div class="section-header">
@@ -385,7 +427,7 @@
                     <div class="flow-step">
                         <div class="flow-icon">🛡️</div>
                         <h4>DNS Filtering Engine</h4>
-                        <p>Real-time filtering against 630K+ domain blocklist with recursive caching for performance.</p>
+                        <p>Real-time filtering against 630K+ domain blocklist (and growing) with recursive caching for performance.</p>
                     </div>
                     <div class="flow-step">
                         <div class="flow-icon">🌐</div>
@@ -394,6 +436,32 @@
                     </div>
                 </div>
                 <img src="../assets/images/network-diagram.png" alt="SiftDNS Network Architecture Diagram" style="width:100%;max-width:1000px;margin:3rem auto 0;display:block;border-radius:24px;box-shadow:var(--shadow-xl);opacity:0.9;">
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🏗️</div>
+                    <h3>Infrastructure Design</h3>
+                    <p>Cloud-native architecture built for scalability, reliability, and global performance.</p>
+                    <ul>
+                        <li>Geo-redundant HA deployment across regions</li>
+                        <li>Auto-scaling based on traffic patterns</li>
+                        <li>Redundant DNS server configuration</li>
+                        <li>Automated backup and disaster recovery</li>
+                        <li>Real-time health monitoring and alerting</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Operational Excellence</h3>
+                    <p>Comprehensive automation and monitoring ensuring consistent service delivery and rapid issue resolution.</p>
+                    <ul>
+                        <li>Infrastructure as code deployment</li>
+                        <li>Automated configuration management</li>
+                        <li>Continuous monitoring and alerting</li>
+                        <li>Monthly security patching and hardening cycles</li>
+                        <li>Performance optimization and tuning</li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section class="section" id="technology">
@@ -409,6 +477,8 @@
                         <li>DigitalOcean cloud platform deployment</li>
                         <li>Ansible automation & configuration management</li>
                         <li>Managed load balancing with health checks</li>
+                        <li>Automated backup and disaster recovery</li>
+                        <li>Comprehensive monitoring and alerting systems</li>
                         <li>Infrastructure as code practices</li>
                     </ul>
                 </div>
@@ -419,7 +489,21 @@
                         <li>Zero-logging DNS architecture</li>
                         <li>Deep Malware Blocking</li>
                         <li>DDoS protection and security hardening</li>
+                        <li>Advanced firewall rules and rate limiting</li>
                         <li>Direct root server query implementation</li>
+                        <li>Monthly infrastructure patching</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💳</div>
+                    <h3>Business & Integration</h3>
+                    <ul>
+                        <li>Stripe payment processing and subscriptions</li>
+                        <li>Automated billing and customer management</li>
+                        <li>Email automation and customer communication</li>
+                        <li>Support ticket system integration</li>
+                        <li>Analytics and conversion tracking</li>
+                        <li>Customer feedback and testimonial collection</li>
                     </ul>
                 </div>
             </div>
@@ -441,7 +525,7 @@
         <section class="section" id="impact">
             <div class="section-header">
                 <h2 class="section-title">Results & Impact</h2>
-                <p class="section-subtitle">Measurable improvements in user experience, performance metrics, and business outcomes.</p>
+                <p class="section-subtitle">Measurable improvements in user experience, performance metrics, and business outcomes with documented customer success stories.</p>
             </div>
             <div class="impact">
                 <div class="impact-content">
@@ -449,27 +533,55 @@
                     <div class="impact-grid">
                         <div class="impact-stat"><span class="impact-stat-value">&lt;50ms</span> <span class="impact-stat-label">Average Response Time</span></div>
                         <div class="impact-stat"><span class="impact-stat-value">66%</span> <span class="impact-stat-label">Latency Reduction</span></div>
-                        <div class="impact-stat"><span class="impact-stat-value">630K+</span> <span class="impact-stat-label">Blocked Domains</span></div>
+                        <div class="impact-stat"><span class="impact-stat-value">630K+</span> <span class="impact-stat-label">Blocked Domains (and growing)</span></div>
                         <div class="impact-stat"><span class="impact-stat-value">99.9%</span> <span class="impact-stat-label">Uptime Achieved</span></div>
                     </div>
                 </div>
             </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🎮</div>
+                    <h3>Gaming Performance</h3>
+                    <p><strong>"Latency reduced from 27ms to 9ms"</strong> - Customer reported 66% improvement in gaming performance through optimized DNS resolution and reduced ISP throttling.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚫</div>
+                    <h3>Ad Blocking Effectiveness</h3>
+                    <p><strong>"No ads at all on Google searches or major news sites"</strong> - Complete ad blocking across platforms without browser extensions or software installations.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🌟</div>
+                    <h3>User Experience</h3>
+                    <p><strong>"Like the old internet where content had focus"</strong> - Users report significantly improved browsing experience with faster page loads and cleaner interfaces.</p>
+                </div>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Business Validation</h3>
+                    <p>Proven market demand with sustainable subscription revenue model and positive customer feedback driving organic growth.</p>
+                    <ul>
+                        <li>Sustainable $3/month pricing model</li>
+                        <li>High free trial to paid conversion rate <span style="font-size: 0.85em; color: var(--accent); font-style: italic;">(Historical)</span></li>
+                        <li>Strong customer retention and satisfaction</li>
+                        <li>Organic growth through word-of-mouth</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Technical Excellence</h3>
+                    <p>Demonstrated ability to build, deploy, and operate production-grade infrastructure with enterprise-level reliability.</p>
+                    <ul>
+                        <li>99.9% uptime achievement</li>
+                        <li>Zero major service outages</li>
+                        <li>Automated scaling and failover</li>
+                        <li>Comprehensive monitoring and alerting</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-    </div>
-
-    <footer class="footer">
-        <div class="main-content">
-            <a href="https://github.com/SiftDNS/siftDNS_web" target="_blank" rel="noopener noreferrer" class="github-cta">
-                <svg class="github-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                </svg>
-                View Project on GitHub
-            </a>
-            <p style="margin-top: 2rem; color: var(--text-muted); font-size: 0.9rem;">
-                &copy; 2026 A. Michael Tatum. All rights reserved.
-            </p>
+        
         </div>
-    </footer>
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -525,6 +637,12 @@
                 }, a);
             document.querySelectorAll(".card, .flow-step, .metric, .tech-badge").forEach((e, t) => {
                 e.style.opacity = "0", e.style.transform = "translateY(30px)", e.style.transition = `all 0.6s ease ${t*.05}s`, r.observe(e)
+            }), document.querySelectorAll(".project-link").forEach(e => {
+                e.addEventListener("mouseenter", function() {
+                    this.style.transform = "translateY(-8px) scale(1.02)"
+                }), e.addEventListener("mouseleave", function() {
+                    this.style.transform = "translateY(0) scale(1)"
+                })
             }), window.addEventListener("scroll", () => {
                 const e = window.pageYOffset,
                     t = document.querySelectorAll(".floating-shape");
@@ -533,7 +651,12 @@
                     t.style.transform = `translateY(${e*s}px)`
                 })
             })
-        });
+        }), window.addEventListener("load", () => {
+            if ("performance" in window) {
+                const e = performance.getEntriesByType("navigation")[0];
+                console.log("Page load time:", Math.round(e.loadEventEnd - e.fetchStart), "ms")
+            }
+        })
     </script>
 </body>
 
