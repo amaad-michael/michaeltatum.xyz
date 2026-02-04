@@ -128,7 +128,6 @@
             display: flex;
             align-items: center;
             border-bottom: 1px solid var(--border-color);
-            /* SUNSET MODE: Desaturate hero slightly to indicate archived status */
             filter: grayscale(0.2);
         }
 
@@ -142,7 +141,6 @@
             position: relative;
             z-index: 1;
             animation: heroFadeIn 1s ease-out;
-            /* SIDE BY SIDE LAYOUT */
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -162,11 +160,8 @@
         .hero-description { font-size: 1rem; margin-bottom: 3rem; opacity: .9; max-width: 800px; line-height: 2; color: var(--text-muted); }
         .hero-author { font-size: 1rem; margin-bottom: 3rem; opacity: .8; font-weight: 500; color: var(--text-muted); }
         
-        /* UPDATED CTA for Archived Status */
         .hero-cta { display: inline-flex; align-items: center; gap: .5rem; background: var(--bg-card); color: var(--text-muted); padding: 1rem 2rem; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all .3s ease; box-shadow: none; border: 1px solid var(--border-color); margin-bottom: 3rem; cursor: not-allowed; opacity: 0.8; }
-        .hero-cta:hover { transform: none; background: var(--bg-card); box-shadow: none; }
 
-        /* UPDATED METRICS GRID */
         .hero-metrics {
             display: flex;
             flex-wrap: wrap;
@@ -237,7 +232,42 @@
         .tech-badge { background: var(--bg-header); color: var(--text-muted); padding: 1rem 2rem; border-radius: 50px; text-align: center; font-weight: 600; font-size: .9rem; transition: all .3s ease; border: 2px solid var(--border-color); }
         .tech-badge:hover { background: var(--primary); color: white; transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--primary) }
         
-        /* RESOURCES SECTION REMOVED */
+        /* --- FOOTER & GITHUB BUTTON --- */
+        .footer {
+            padding: 6rem 0 4rem;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            background: rgba(26, 26, 26, 0.3);
+        }
+
+        .github-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--bg-card);
+            color: var(--text-main);
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
+        }
+
+        .github-cta:hover {
+            transform: translateY(-5px);
+            background: var(--primary-dark);
+            border-color: var(--primary-light);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .github-icon {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
 
         @media(max-width:900px) {
             .nav-links { display: none }
@@ -249,7 +279,6 @@
             .main-content { padding: 0 1rem }
             .architecture-flow { grid-template-columns: 1fr }
             .tech-stack { grid-template-columns: repeat(2, 1fr) }
-            .project-links { grid-template-columns: 1fr }
             .card { padding: 2rem; flex: 1 1 100%; }
             .architecture { padding: 2rem }
             .impact { padding: 3rem 2rem }
@@ -562,7 +591,7 @@
                     <p>Proven market demand with sustainable subscription revenue model and positive customer feedback driving organic growth.</p>
                     <ul>
                         <li>Sustainable $3/month pricing model</li>
-                        <li>High free trial to paid conversion rate <span style="font-size: 0.85em; color: var(--accent); font-style: italic;">(Historical)</span></li>
+                        <li>High free trial to paid conversion rate</li>
                         <li>Strong customer retention and satisfaction</li>
                         <li>Organic growth through word-of-mouth</li>
                     </ul>
@@ -580,8 +609,21 @@
                 </div>
             </div>
         </section>
-        
+    </div>
+
+    <footer class="footer">
+        <div class="main-content">
+            <a href="https://github.com/SiftDNS/siftDNS_web" target="_blank" rel="noopener noreferrer" class="github-cta">
+                <svg class="github-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+                View Project on GitHub
+            </a>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+                &copy; 2026 A. Michael Tatum. All rights reserved.
+            </p>
         </div>
+    </footer>
     
     <script>
         document.addEventListener("DOMContentLoaded", function() {
