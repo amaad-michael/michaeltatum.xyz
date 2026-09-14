@@ -20,4 +20,4 @@ This project serves as a centralized professional hub, showcasing technical expe
 
 ---
 
-*Maintained by A. Michael Tatum — Cloud Linux Engineer*
+## Maintained by A. Michael Tatum — Cloud Linux Engineer

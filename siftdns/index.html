@@ -23,17 +23,17 @@
     <style>
         :root {
             /* --- Sediment & Stream Palette --- */
-            --bg-main: #1a1a1a;       
-            --bg-card: #2C2C2C;       
-            --bg-header: #232323;     
-            --primary: #466D87;       
-            --primary-dark: #355266;  
-            --primary-light: #598392; 
-            --accent: #D4A373;        
-            --accent-hover: #E0C097;  
-            --secondary: #8EB69B;     
-            --text-main: #f0f0f0;     
-            --text-muted: #b0b0b0;    
+            --bg-main: #1a1a1a;
+            --bg-card: #2C2C2C;
+            --bg-header: #232323;
+            --primary: #466D87;
+            --primary-dark: #355266;
+            --primary-light: #598392;
+            --accent: #D4A373;
+            --accent-hover: #E0C097;
+            --secondary: #8EB69B;
+            --text-main: #f0f0f0;
+            --text-muted: #b0b0b0;
             --text-on-accent: #1a1a1a;
             --border-color: #3a3a3a;
             --gradient-primary: linear-gradient(135deg, #466D87 0%, #2E4A5C 100%);
@@ -65,7 +65,7 @@
         .hero-logo-container.combined-logo {
             position: relative;
             width: 100%;
-            max-width: 450px; 
+            max-width: 450px;
             aspect-ratio: 1/1;
             display: flex;
             justify-content: center;
@@ -142,7 +142,7 @@
         @keyframes gradientShift { 0% { background-position: 0 } 50% { background-position: 100% } 100% { background-position: 0 } }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.03) 0%, transparent 40%) }
         .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px; background: linear-gradient(to top, var(--bg-main), transparent) }
-        
+
         .hero-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -167,7 +167,7 @@
         .hero-subtitle { font-size: 2rem; margin-bottom: 1rem; opacity: 1; font-weight: 600; color: var(--primary-light); }
         .hero-description { font-size: 1rem; margin-bottom: 3rem; opacity: .9; max-width: 800px; line-height: 2; color: var(--text-muted); }
         .hero-author { font-size: 1rem; margin-bottom: 3rem; opacity: .8; font-weight: 500; color: var(--text-muted); }
-        
+
         .hero-cta { display: inline-flex; align-items: center; gap: .5rem; background: var(--bg-card); color: var(--text-muted); padding: 1rem 2rem; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all .3s ease; box-shadow: none; border: 1px solid var(--border-color); margin-bottom: 3rem; cursor: not-allowed; opacity: 0.8; }
 
         .hero-metrics {
@@ -215,9 +215,9 @@
         .architecture { background: var(--bg-card); border-radius: 32px; padding: 4rem; box-shadow: var(--shadow-xl); margin: 4rem 0; border: 1px solid var(--border-color); position: relative; overflow: hidden }
         .architecture::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: var(--primary); }
         .architecture-title { text-align: center; font-size: 2rem; font-weight: 700; margin-bottom: 3rem; color: var(--primary); }
-        
+
         .architecture-flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; align-items: center; position: relative }
-        
+
         .flow-step { text-align: center; padding: 2rem; background: var(--bg-main); border-radius: 20px; border: 2px solid var(--border-color); transition: all .4s ease; position: relative; overflow: hidden }
         .flow-step::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: var(--primary); opacity: 0; transition: opacity .4s ease }
         .flow-step:hover { border-color: var(--primary); transform: translateY(-5px); box-shadow: var(--shadow-lg) }
@@ -239,7 +239,7 @@
         .tech-stack { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 2rem; margin-top: 3rem }
         .tech-badge { background: var(--bg-header); color: var(--text-muted); padding: 1rem 2rem; border-radius: 50px; text-align: center; font-weight: 600; font-size: .9rem; transition: all .3s ease; border: 2px solid var(--border-color); }
         .tech-badge:hover { background: var(--primary); color: white; transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--primary) }
-        
+
         /* --- FOOTER & GITHUB BUTTON --- */
         .footer {
             padding: 6rem 0 4rem;
@@ -327,7 +327,7 @@
     </nav>
     <section class="hero">
         <div class="hero-content">
-            
+
             <div class="hero-logo-wrapper">
                 <div class="hero-logo-container combined-logo">
                     <svg width="0" height="0" style="position: absolute; visibility: hidden;">
@@ -638,7 +638,7 @@
             </p>
         </div>
     </footer>
-    
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const t = document.getElementById("navbar"),
