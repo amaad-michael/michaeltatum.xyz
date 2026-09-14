@@ -60,3 +60,4 @@ yarn-error.log*
 *.tmp
 *.bak
 *.old
+.audit-fix-backup-*

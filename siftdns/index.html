@@ -5,12 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="#1a1a1a">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; font-src 'self' data: https://fonts.gstatic.com; base-uri 'self'; form-action 'self';">
+
     <title>SiftDNS - Project Sunset | A. Michael Tatum Portfolio</title>
     <meta name="description" content="Archived: A production-ready DNS privacy service built from the ground up. Delivered enterprise-grade ad blocking and privacy protection.">
+
+    <link rel="canonical" href="https://michaeltatum.xyz/siftdns/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michaeltatum.xyz/siftdns/">
+    <meta property="og:title" content="SiftDNS - Project Sunset | A. Michael Tatum Portfolio">
+    <meta property="og:description" content="Archived: A production-ready DNS privacy service built from the ground up. Delivered enterprise-grade ad blocking and privacy protection.">
+    <meta property="og:image" content="https://michaeltatum.xyz/assets/images/profile-cleaned.jpg">
+    <meta property="og:site_name" content="A. Michael Tatum Portfolio">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" href="favicon.ico">
     <style>
         :root {
@@ -283,6 +291,12 @@
             .architecture { padding: 2rem }
             .impact { padding: 3rem 2rem }
         }
+
+        /* Keyboard focus visibility (audit 2026-09-13) */
+        :focus-visible {
+            outline: 2px solid var(--accent, #7ab5d4);
+            outline-offset: 2px;
+        }
     </style>
 </head>
 
@@ -342,7 +356,7 @@
                 <h2 class="hero-subtitle">Privacy-First DNS Infrastructure</h2>
                 <p class="hero-description">A production-ready DNS privacy service that was built from the ground up. Delivered enterprise-grade ad blocking and privacy protection through custom filtering infrastructure, having served real customers with 99.9% uptime and zero-logging guarantees.</p>
                 <p class="hero-author">Designed & Built by <a href="https://michaeltatum.xyz/" target="_blank" rel="noopener noreferrer" style="color:var(--accent);text-decoration:underline;text-decoration-color:var(--accent)">A. Michael Tatum</a></p>
-                <a href="#" class="hero-cta">🔒 Service Archived</a>
+                <span class="hero-cta" role="button" aria-disabled="true" tabindex="-1">🔒 Service Archived</span>
                 <div class="hero-metrics">
                     <div class="metric"><span class="metric-value">630K+</span> <span class="metric-label">Peak Domains Blocked</span></div>
                     <div class="metric"><span class="metric-value">$3/mo</span> <span class="metric-label">Proven Revenue Model</span></div>
