@@ -881,6 +881,35 @@
             .footer-actions { flex-direction: column; align-items: center; }
         }
 
+
+        /* --- Consulting --- */
+        .consulting-intro {
+            color: var(--text-secondary);
+            max-width: 720px;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-top: -24px;
+            margin-bottom: 28px;
+        }
+
+        .consulting-body {
+            color: var(--text-secondary);
+            max-width: 720px;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 28px;
+        }
+
+        .consulting-note {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .consulting-cta {
+            margin-top: 24px;
+        }
+
         /* --- Print --- */
         @media print {
             .site-nav, .hero-bg, body::before { display: none; }
@@ -900,6 +929,7 @@
                 <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
+                <a href="#consulting">Consulting</a>
             </div>
         </div>
     </nav>
@@ -1254,6 +1284,20 @@
                         <div class="edu-school"><a href="https://www.gwinnetttech.edu/" target="_blank" rel="noopener noreferrer">Gwinnett Technical College</a></div>
                         <div class="edu-date">Aug 2010 — May 2012</div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-section" id="consulting">
+            <div class="page-wrapper">
+                <div class="section-header reveal">
+                    <span class="section-label">One-Off Engagements</span>
+                    <h2 class="section-title">Consulting</h2>
+                </div>
+                <p class="consulting-intro reveal">Alongside my full-time role, I take on one-off Linux consulting work. If you have a server problem, a migration, an audit, or a piece of infrastructure that needs attention, we can scope a single engagement around it. Every engagement is agreed up front, done remotely, and closed out with a written summary of what was done.</p>
+                <p class="consulting-body reveal">Recent work has covered server hardening, Ansible automation, backup and disaster recovery preparation, firewall reviews, and SSH access cleanup, but that list is not a menu. If it runs Linux and it matters to you, ask.</p>
+                <p class="consulting-note reveal">One-off engagements only: no retainers and no on-call arrangements. I take on one client at a time, and scheduling is flexible for the right engagement.</p>
+                <div class="consulting-cta reveal">
+                    <a class="btn-primary" href="mailto:amaad.michael@gmail.com">Start a Conversation</a>
                 </div>
             </div>
         </section>
